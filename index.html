@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Combat flow chart for Mythras</h2>
+  <!-- Trigger the modal with a button -->
+ 
+ <h3>Order of actions</h3>
+ <p>
+Roll initiative (Strike Rank+d10) at start of combat only</p>
+ <p>Fatigue check (CON in seconds rounded up -> then fatigue check)
+</p>
+<h4>Attacker</h4>
+
+ <p>Attacker spends an AP to make an attack, selects combat action, applies the <a href="#" data-toggle="modal" data-target="#SituationalModifiers">situational modifiers</a> and notes the attack die roll and result
+ <dl class="dl-horizontal">
+  <dt>Combat Actions - Proactive</dt>
+  <dd><ul class="list-inline">
+	<li>Attack</li>
+	<li>Brace</li>
+	<li>Cast Magic</li>
+	<li>Change Range 106</li>
+	<li><a href="#" data-toggle="modal" data-target="#ChangeRange">Change Range 106</a></li>
+	<li>Delay</li>
+	<li>Dither</li>
+	<li>Hold Magic</li>
+	<li>Mount</li>
+	<li><a href="https://drive.google.com/open?id=11r3hSNeN2SAeoxgr51aPb_kaoT5b3pYK">Move</a></li>
+	<li><a href="#" data-toggle="modal" data-target="#Outmaneuvre">Outmaneuvre</a> 104</li>
+	<li>Ready weapon</li>
+	<li>Regain Footing</li>
+	<li>Struggle</li>
+	<li>Take Cover 91-92 </li>
+</ul>
+</li>
+</dd>
+</dl>
+
+  <dl class="dl-horizontal">
+  <dt>
+ 	<dt> Combat</dt>
+		<dd>
+ <ul class="list-inline">
+	<li>    <a href="#" data-toggle="modal" data-target="#Charging">Charging</a> </li>
+	<li>     <a href="#" data-toggle="modal" data-target="#ChargingIntoContact">into contact</a></li>
+	<li>    <a href="#" data-toggle="modal" data-target="#ChargingThroughContact">through contact</a> 102</li>
+	<li>    Falling and combat (Prone fights at Formidable)</li>
+	<li>     <a href="#" data-toggle="modal" data-target="#LeapingAttacks">Leaping Attacks</a> 104</li>
+	<li>      Mounted combat 104</li>
+	<li> <a href="#" data-toggle="modal" data-target="#Outmaneuvre">Outmaneuvre</a>  104</li>
+	<li>     <a href="#" data-toggle="modal" data-target="#Surprise">Surprise</a>105</li>
+	<li>     Unarmed combat</li>
+
+</ul>
+
+	</dd>
+  </dt>
+  <dd>
+</dd>
+</dl>
+
+
+   <dl class="dl-horizontal">
+  <dt>
+ 	<dt> Ranged combat</dt>
+		<dd>
+<ul class="list-inline">
+	   <li>Ranged weapons reload 109 </li>
+	<li><a href="https://drive.google.com/open?id=1nSdoLdkGnCXzeBbHd8TOyCyvH6QsqcwO">Ranged combat special effects</a>  </li>
+
+<ul>
+	</dd>
+  </dt>
+  <dd>
+</dd>
+</dl>
+
+
+   <dl class="dl-horizontal">
+  <dt>
+ 	<dt> Magic</dt>
+		<dd>
+<ul class="list-inline">
+	<li>       Magic in Combat </li>
+	<li>       <a href="https://drive.google.com/open?id=1u5xZlxve0snFnxB4m-GR2LXCad9xkcL2">Magic situational effects</a></li>
+	<li>	 Running out of Magic Points 117</li>
+	<li>       Shaman fights</li>
+	<li>       <a href="https://drive.google.com/open?id=0B0J20AZXw-hDOC13RjlBRHQxZXM">Sorcery in Combat</a></li>
+	<li>      Spirit Combat 137 </li>
+	<li>       <a href="https://drive.google.com/open?id=12-3T8W4E2TT_nSavY0QtBdZu1qFxf4UH">Spirit combat special effects</a> </li>
+<ul>
+	</dd>
+  </dt>
+  <dd>
+</dd>
+</dl>
+
+
+
+	<dl class="dl-horizontal">
+  <dt>Free actions</dt>
+  <dd><ul class="list-inline">
+
+	<li><a href="#" data-toggle="modal" data-target="#PassiveBlocking">Passive blocking (Ward Location)</a> 93, 105</li>
+	<li>Assess situation</li>
+	<li>Drop Weapon</li>
+	<li>Signal</li>
+	<li>Use group luck point</li>
+	<li>Use Luck Point</li>
+</ul>
+</li>
+<h4>Defender</h4>
+</dd>
+ <dl class="dl-horizontal">
+ 
+ 	
+ 	<dt> Uses AP for Reactive Action</dt>
+ 	
+		<dd> 
+		<ul class="list-inline">
+		<li>Defender spends an AP to make a reactive action per threat, applies the <a href="#" data-toggle="modal" data-target="#SituationalModifiers">situational modifiers</a> and notes the parry die roll and result. Any # of reactions can be made - once per threat</li>
+	<li>		<a href="#" data-toggle="modal" data-target="#Counterspell">Counterspell</a>  92 </li>
+		<li>		Evade</li>
+	<li>		<a href="#" data-toggle="modal" data-target="#Interrupt">Interrupt</a>  92</li>
+		<li>		Parry</li>
+		</ul>
+		
+		</dd>
+    </dt>
+     <dt>
+ 	<dt> No AP for defence</dt>
+ 	<dd>
+ 		<li>treat as if failed parry </li>
+		<li><a href="#" data-toggle="modal" data-target="#PassiveBlocking">Passive blocking (Ward Location)</a> 93, 105</li>
+ 	</dd>
+</dt>
+  </dl>
+
+</dd>
+<h4>Results</h4>
+ <dl class="dl-horizontal">
+ 
+ 	
+ 	<dt> Compare <a href="#" data-toggle="modal" data-target="#DegreeOfSuccess">degree of success</a></dt>
+ 	
+		<dd> 
+	<li>Winner chooses special effect/s used </li>
+	<dl class="dl-horizontal">
+  <dt>Select combat special effects</dt>
+  <dd><ul class="list-inline">
+ 	<li> <a href="https://drive.google.com/open?id=10YOZE9eNg3mX_F01i1W3PubREESAlqrZ">Offensive</a>,</li>
+	<li>  <a href="https://drive.google.com/open?id=1i9zYMq1LBcsnc3t7vbZlIKH-FN3v9xOb">Defensive</a></li>
+	<li><a href="https://drive.google.com/open?id=12-3T8W4E2TT_nSavY0QtBdZu1qFxf4UH">Spirit combat special effects</a></li>
+			<li><a href="#" data-toggle="modal" data-target="#NaturalWeaponSpecialEffects">Select Natural Weapons Special effects</a> 222</li>
+			<li>If SE require opposed check from the opponent make one now and compare it to the original attack or parry value</li>
+	
+</ul>
+</li>
+</dd>
+</dl>
+		
+		</dd>
+    </dt>
+     <dt>
+ 	<dt> Compare damage</dt>
+ 	<dd>
+ 		<li>If the SE chosen is not Choose location, roll to determine what location has been hit</li>
+ 		<p>If the attacker succeeded roll damage and apply Damage Modifier if any</p>
+	<p>If the defender succeeded  <a href="#" data-toggle="modal" data-target="#DamageReduction">reduce damage</a> and for any armor, <a href="#" data-toggle="modal" data-target="#PassiveBlocking">ward location</a> 93, 105 and protective magic worn</p>
+	<li>weapon damage?</li>
+	<li>Knockback if damage > SIZ</li>
+	<li><a href="https://drive.google.com/open?id=1BfW-gVsmmZhLBfk5uKB6-5LQ0CYd4g8h">Healing and wounds</a></li>
+	<li>  <a href="#" data-toggle="modal" data-target="#HeroicLastAction">Heroic Last Action</a>  111</li>
+
+ 	
+ 	</dd>
+</dt>
+  </dl>
+
+ 
+	
+</ul>
+</li>
+</dd>
+</dl>
+	
+	
+	
+	<li>If the opponent is still standing and willing to fight repeat</li>
+		<li>Weapon and shield tables</li>
+
+
+	
+  
+  <!-- Modal -->
+  <div class="modal fade" id="Outmaneuvre" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Outmanoeuvring</h4>
+        </div>
+        <div class="modal-body">
+          <p>
+          <ul>
+	<li>group opposed roll of Evade. </li>
+	<li>          Every participant must spend an Action Point. </li>
+	<li>          Failed evade roll no attack against character for remainder of the round. .</li>
+	<li>If the manoeuvring character  beats all of his opponents he has the choice of engaging a single foe for the rest of the round or Withdrawing from the fight. </li>
+</ul>
+
+.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+    <!-- Modal -->
+  <div class="modal fade" id="PassiveBlocking" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Passive Blocking / Ward Location</h4>
+        </div>
+        <div class="modal-body">
+          <p>
+          <ul>
+	<li>Passive Blocking is the placement of weapons and shields in such a manner so that they effectively act as cover. </li>
+	<li>Characters armed with a weapon may hold it in such a way that it covers a chosen location (or locations when using a shield), but at the cost of being unable to actively parry with it (see Ward Location page 93). Any attack which hits those locations automatically receives the benefit of the weapon or shield, reducing damage as normal. The tech- nique is commonly used when a warrior wishes to guard a weak spot or wounded location. </li>
+	<li>It may seem paradoxical to sacrifice the ability to parry, poten- tially opening up a passively blocking character to an unopposed attack. However there are many situations it is a valid tactic: for example when used by inexperienced troops or those lacking full sets of armour. In addition there is nothing which prevents a two weap- ons or weapon and shield combatant from using his other weapon to actively parry. </li>
+	<li>Since passive blocking works in the same way as cover, the Choose Location special effect cannot be used to bypass the block in close combat, though opponents can still use the effect to strike other unblocked areas. Assuming a shield, passive blocking against missiles becomes even better, since for ranged weapons Choose Location is a critical only. </li>
+	<li>Crouching down behind a shield allows a character to double the number of locations covered whilst passive blocking. </li>
+</ul>
+
+</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+   <!-- Modal -->
+  <div class="modal fade" id="Counterspell" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Counterspell</h4>
+        </div>
+        <div class="modal-body">
+          <p>The character can attempt to dismiss or counter an incoming spell, miracle or spirit. This assumes the countering magic has a casting time of one Turn, otherwise it must be prepared in advance, and temporarily withheld using the Hold Magic action. Successfully intercepting magic in this manner is assumed to negate the entire spell or miracle, even those with multiple targets or areas of effect. </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  </div>
+   <!-- Modal -->
+  <div class="modal fade" id="Interrupt" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Interrupt</h4>
+        </div>
+        <div class="modal-body">
+          <p>
+          <ul>
+	<li>(Delaying characters only) </li>
+	<li>          Halts an opponent’s turn after his declara- tion in order to take your own delayed turn. </li>
+	<li>          Assuming no change in the tactical situation, the opponent continues his turn after yours is completed. </li>
+	<li>          If unable to still achieve his original declaration, the opponent’s Action Point is wasted. </li>
+	<li>          An interrupt can also be used against anyone passing close by the delaying character, within weapon reach.</li>
+          
+</ul>
+ </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+     <!-- Modal -->
+  <div class="modal fade" id="HeroicLastAction" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Heroic Last Action</h4>
+        </div>
+        <div class="modal-body">
+          <p>
+         	<li> In special cases where key characters receive a Major Wound, </li>
+	<li>          the Games Master might allow a heroic last action - such as spitting out one last spell, attempting to cut down their slayer, crawling away to hide, </li>
+	<li>          or trying to tourniquet their own wound. </li>
+	<li>          They must have working limbs applicable to the action, and burn a Luck Point. </li>
+	<li>          They get a single opportunity to attempt their action, and then immedi- ately collapse into unconsciousness, and probable death. </li>
+</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+    </div>
+     <!-- Modal -->
+  <div class="modal fade" id="DegreeOfSuccess" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Degree of Success</h4>
+        </div>
+        <div class="modal-body">
+          <p>	
+	<li>One degree of success (critical vs success, success vs failure) grants one Special Effect</li>
+	<li>Two degrees of success (critical vs failure, success vs fumble) grants two Special Effects</li>
+	<li>Three degrees of success (critical vs fumble) grants three Special Effects</li>
+</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+     <!-- Modal -->
+  <div class="modal fade" id="DamageReduction" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Damage Reduction</h4>
+        </div>
+        <div class="modal-body">
+          <p>	
+	<li>Equal or greater sized weapon or shield stops all damage</li>
+	<li>Parry with a weapon or shield one size less stops half the damage</li>
+	<li>Parry with a weapon or shield two or more sizes less doesn't stop any damage</li>
+
+</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+     <!-- Modal -->
+  <div class="modal fade" id="Charging" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Charging</h4>
+        </div>
+        <div class="modal-body">
+          <p>
+<ul>
+	<li>          A charge requires at least one full Combat Round of move- ment at running or sprinting speed prior to contact </li>
+	<li>A charge imposes a penalty to the attack roll, increasing it by one difficulty grade </li>
+	<li>A charge increases a bipedal attacker’s Damage Modifier by one step; or the Damage Modifier of four (or more) legged creatures by two steps. In addition, the Size of the attacking weapon is improved by one step </li>
+	<li>The recipient of a charge has three options; attempt to parry, evade or simultaneously counterattack the charging attacker. </li>
+	<li>Parrying a charge attack holds some significant risks, depend- ing on the size and strength of the attacker. The primary danger is suffering knockback, which may leave a victim prone even if they suffer no other damage from the impact. Use of the Brace combat action in advance of the charge attack can help mitigate the effects of knockback. The secondary threat comes from the bonus to the charger’s weapon size, which may permit a blow to penetrate or overcome the defender’s parrying weapon. </li>
+	<li>Evading a charge attack is more of a gamble, but in some cir- cumstances may be the only option. The defender must make an opposed roll of his Evade skill versus the charging opponent’s com- bat skill. If the defender wins he throws himself completely clear of the charge, otherwise he is hit. Any difference in Level of Success results in Special Effects as normal. </li>
+	<li>Counterattacking sacrifices the defender’s opportunity to actively defend against the charge in exchange for a chance to injure the attacker. In such cases both sides are treated as having failed to parry, although they can still benefit from Passive Blocking. The wielder of the weapon with the longest Reach strikes first, potentially hindering his opponent from launching the subsequent blow. If using long- shafted impaling weapons which can be ‘set’ against a charge, the defender may substitute his own Damage Modifier for that of the charging opponent (or its mount if the attacker is riding). 	</li>
+</ul>
+
+</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+    <!-- Modal -->
+  <div class="modal fade" id="ChargingIntoContact" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Charging into contact</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some charges are intended as a method to crash into an oppo- nent, then remain in place to take advantage of any chaos caused. An example of this would be a barbarian warrior, armed with a great-axe, throwing himself at a shield wall, hoping that the impetus of his charge will help him smash through the defender’s shield or knock him over. 
+Once the charge strikes home, the attacker is considered engaged with his opponent. From that moment on combat proceeds normally. All benefits gained from the charge are lost after the first attack. 
+</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+     <!-- Modal -->
+  <div class="modal fade" id="ChargingThroughContact" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Charging through contact</h4>
+        </div>
+        <div class="modal-body">
+          <p>The second type of charge is one which uses the momentum to carry the attacker through, and clear of an engagement. It is nor- mally limited to mounted combatants or creatures of significant size unlikely to be hindered by an impact with smaller foes. For instance an enraged aurochs could quite easily charge through a group of warriors, tossing or trampling over a victim as it passes, before con- tinuing on out of close combat range. 
+The speed of such charges prevents the attacker and defender from exchanging more than a single action with each other, namely the charge attack, and the defender’s reaction to it (Parry, Evade or Counterattack). Since the charge attack occurs on the attack- er’s turn, they will have already been carried clear by the time the defender’s turn arrives. 
+Note that charges are not limited to just running, but can be per- formed by flying or swimming creatures in the relevant environment. 
+</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+   <!-- Modal -->
+  <div class="modal fade" id="Surprise" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Surprise</h4>
+        </div>
+        <div class="modal-body">
+          <p>
+         	<li> The target suffers a -10 penalty to initiative Until their Initiative arrives they are considered flat footed  and cannot defend themselves</li>
+	<li>The first attack on the target, if successful, gains a bonus Special Effect</li>
+	<li>For the remainder of the round they may not perform any offensive action </li>
+
+	<li>As surprise can be so devastating, targets of such an attack should be permitted a chance to detect the impending conflict. For instance, an ambush might allow an opposed roll of Perception versus Stealth; or Insight versus Deceit for a betrayal. Difficulty modifiers should be applied in situations where the target is hindered, such as being inebriated or dozing lightly. Conversely a bonus should be applied if the target is suspicious or forewarned. If the target wins the opposed roll then the effects of surprise are negated. </li>
+</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+    <!-- Modal -->
+  <div class="modal fade" id="LeapingAttacks" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Leaping Attacks</h4>
+        </div>
+        <div class="modal-body">
+          <p>
+         <ul>
+	<li> There are some animals, monsters, and even people who leap upon their victims in order to knock them prone. </li>
+	<li>          Leaping attacks can be launched from a variety of situations, but most are triggered as part of an ambush or at the conclusion of a charge. </li>
+	<li>          A few creatures have the ability to leap atop an opponent without the need for a run-up or superior height. </li>
+	<li>A leaping attack is resolved with an opposed roll of the leap- er’s Athletics skill versus the defender’s Brawn or Evade skill. If the leaper wins then the defender is automatically knocked prone, with the attacker astride them. If the attack fails, the defender has weath- ered or sidestepped the impact. If the winner of the opposed roll achieves one or more levels of success over his opponent, they may select suitable Special Effects as per normal combat. </li>
+	<li>No damage is inflicted as part of the leap (unless they possess the Leaper creature ability page 216); however a subsequently prone victim cannot recover his footing until either his attacker leaves him, or he eventually wins a Special Effect permitting him to Arise. </li>
+	<li>If the target is a quadruped, then it may substitute Athletics for Evade, and makes the attacker’s initial Athletics roll one difficulty grade harder. In addition, leaping attacks only work against oppo- nents of up to twice the attacker’s SIZ. A target can make themselves more difficult to knock down by proactive use of the Brace combat action, provided they are aware of the impending leap attack. </li>
+</ul>
+</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+     <!-- Modal -->
+  <div class="modal fade" id="NaturalWeaponSpecialEffects" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Natural Weapon Special Effects</h4>
+        </div>
+        <div class="modal-body">
+          <p>
+     <dl class="dl-horizontal">
+  <dt>
+ 	<dt> Beak, Pointed</dt>
+		<dd>  Impale</dd>
+ 	<dt> Beak, Tearing</dt>
+		<dd>  Bleed,Grip</dd>
+	<dt>  Claw/Talons</dt>
+		<dd>  Bleed,Grip</dd>
+	<dt>  Hand/Fist</dt>
+		<dd>  Grip, Stun Location, Take Weapon</dd>
+	<dt>  Hoof</dt>
+		<dd>  Bash, Stun</dd>
+	<dt>  Horns</dt>
+		<dd>  Impale</dd>
+	<dt>  Paw</dt>
+		<dd>  Stun Location</dd>
+	<dt>  Pincer</dt>
+		<dd>  Grip, Sunder</dd>
+	<dt>  Proboscis</dt>
+		<dd>  Impale</dd>
+	<dt>  Stinger</dt>
+		<dd>  Impale</dd>
+	<dt>  Tail</dt>
+		<dd>  Bash, Entangle,Grip</dd>
+	<dt>  Teeth, Crushing</dt>
+		<dd>  Grip</dd>
+	<dt>  Teeth, Grasping</dt>
+		<dd>  Grip, Impale</dd>
+	<dt>  Teeth, Incising</dt>
+		<dd>  Bleed</dd>
+	<dt>  Tentacle</dt>
+		<dd>  Grip, Take Weapon</dd>
+	<dt>  Tusk</dt>
+		<dd>  Impale</dd>
+	<dt>  Wing</dt>
+		<dd>  Bash, Entangle</dd>
+  </dt>
+  <dd>
+</dd>
+</dl>
+     
+</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+     <!-- Modal -->
+  <div class="modal fade" id="SituationalModifiers" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Situational Modifiers</h4>
+        </div>
+        <div class="modal-body">
+          <p>
+     
+<dl class="dl-horizontal">
+  <dt>Situational modifiers</dt>
+  <dd><ul class="list-inline">
+	<li><a href="https://drive.google.com/open?id=0B0J20AZXw-hDUm9iQVl1Zm5lcms">Close combat</a></li>
+	<li><a href="https://drive.google.com/open?id=1nSdoLdkGnCXzeBbHd8TOyCyvH6QsqcwO">Ranged</a></li>
+		<li><a href="https://drive.google.com/open?id=1u5xZlxve0snFnxB4m-GR2LXCad9xkcL2">Magic</a></li>	
+</ul>
+</li>
+</dd>
+</dl>
+ 
+
+     
+</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+ <!-- Modal -->
+  <div class="modal fade" id="ChangeRange" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Change Range</h4>
+        </div>
+        <div class="modal-body">
+          <p>
+         <ul>
+<ul>
+	<li>	The character can attempt to close on, or retreat from, an opponent; changing the range at which he is fighting to take best advantage of his weapon’s reach or disengage from engagement entirely.</li>
+<dl class="dl-horizontal">
+  <dt>Oppose closing/opening range:</dt>
+  <dd><ul class="list-inline">
+	<li>1.  Either keep the range: Evade skills in an opposed test. If initiator of the Change Range wins then he can close/open the range to a desired distance. If the opponent wins then the range is maintained.</li>
+	<li>2.  Or attack the changing character : make an opposed roll combat skill vs the initiators’ Evade. If the opponent wins, he strikes the character, and any difference in Level of Success results in Special Effects. The initiator changes the distance</li>
+
+</ul>
+</li>
+</dd>
+</dl>
+ <dl class="dl-horizontal">
+	<dt>  		Beyond range</dt>
+		<dd>	Can withdraw without special effect</dd>
+	<dt>	Longer Range</dt>
+		<dd>	If fighting at the Reach of the longer weapon, then the user of the shorter weapon cannot directly attack the wielder of the longer. They are still considered to be engaged. User of the shorter weapon can attack the longer weapon, try to close the range between them, or hope to win an applicable Special Effect.  </dd>
+	<dt>	Shorter Range</dt>
+		<dd>	Longer weapon cannot parry. The longer weapon’s Size is reduced as many steps as the difference between the two weapons’ Reach, and only inflicts 1d3+1 damage</dd>
+
+</dd>
+</dl>
+
+</p>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+
+</body>
+</html>
