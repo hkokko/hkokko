@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Combat rules for Mythras </title>
+	<title>Combat flow for Mythras </title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -13,7 +13,7 @@
 <body>
 <div class="container">
 	<h2>
-		Combat rules for Mythras 
+		Combat flow for Mythras
 	</h2>
 <!-- Trigger the modal with a button -->
 	<h3>
@@ -23,7 +23,7 @@
 		Roll initiative (Strike Rank+d10) at start of combat only 
 	</p>
 	<p>
-		Fatigue check (CON in seconds rounded up -> then fatigue check) 
+		Fatigue check (CON in seconds rounded up to next combat round. Combat round = 5 seconds) -> Endurance roll or lose fatigue level) 
 	</p>
 	<table class="table table-striped">
 		<thead>
@@ -61,9 +61,9 @@
 					<li> <a href="#" data-toggle="modal" data-target="#Charging">Charging</a> </li>
 					<li> <a href="#" data-toggle="modal" data-target="#ChargingIntoContact">into contact</a></li>
 					<li> <a href="#" data-toggle="modal" data-target="#ChargingThroughContact">through contact</a> 102</li>
-					<li> Falling and combat (Prone fights at Formidable)</li>
+					<li>  <a href="#" data-toggle="modal" data-target="#Falling">Falling and combat (Prone fights at Formidable)</a></li>
 					<li> <a href="#" data-toggle="modal" data-target="#LeapingAttacks">Leaping Attacks</a> 104</li>
-					<li> Mounted combat 104</li>
+					<li> <a href="#" data-toggle="modal" data-target="#MountedCombat">Mounted combat</a> 104</li>
 					<li> <a href="#" data-toggle="modal" data-target="#Outmaneuvre">Outmaneuvre</a> 104</li>
 					<li> <a href="#" data-toggle="modal" data-target="#Surprise">Surprise</a>105</li>
 					<li> Unarmed combat</li>
@@ -1315,7 +1315,7 @@
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal">&times;</button> 
 				<h4 class="modal-title">
-					Knockback</i> 
+					Knockback
 				</h4>
 			</div>
 			<div class="modal-body">
@@ -1330,5 +1330,55 @@
 		</div>
 	</div>
 </div>
+
+<div class="modal fade" id="Falling" role="dialog">
+	<div class="modal-dialog">
+<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button> 
+				<h4 class="modal-title">
+					Falling
+				</h4>
+			</div>
+			<div class="modal-body">
+					<li>Prone fights at Formidable</li>
+						<li>Prone unable to gain footing can be compelled to surrender</li>
+	<li>				If unengaged with an opponent, the character can regain his footing from being tripped or knocked down. </li>
+	<li>				If engaged, the character must win an opposed test of Brawn or Athletics with the opponent before standing.</li>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="MountedCombat" role="dialog">
+	<div class="modal-dialog">
+<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button> 
+				<h4 class="modal-title">
+					Mounted Combat
+				</h4>
+			</div>
+			<div class="modal-body">
+	<li>A mounted character may only evade by flinging themselves clear of the saddle</li>
+	<li>combat skills of a rider may not exceed their Ride skill</li>
+	<li>1D10+10 for the Hit Location of bipedal creatures, provided the target is lower than the rider.</li>
+	<li>withdraw freely from engagement on his turn provided his mount moves faster than the opponent, and the mount itself is not engaged in attacking.</li>
+	<li>use AP to substitute either his own Combat Style or Ride skill instead of his mount’s, to defend it against attacks.</li>
+	<li>combine his SIZ with his mount’s for the purposes of avoiding Knockback, provided he passes an unopposed Ride roll.</li>
+	<li>when charging with a braced weapon, substitute his own Damage Modifier for that of his mount. A weapon braced for a charging attack cannot be used to parry. If the weapon impales it must be left in the body of the target, or else break or dismount the rider as the mount continues past.</li>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+			</div>
+		</div>
+	</div>
+</div>
+
 </body>
 </html>
