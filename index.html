@@ -4,8 +4,7 @@
 	<title>Combat flow for Mythras </title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
 	</script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
@@ -39,7 +38,7 @@
 				<td> 
 				<ul class="list-inline">
 					<li>Attack</li>
-					<li>Brace</li>
+					<li><a href="#" data-toggle="modal" data-target="#Brace">Brace 91 </a></li>
 					<li>Cast Magic</li>
 					<li><a href="#" data-toggle="modal" data-target="#ChangeRange">Change Range 106</a></li>
 					<li>Delay</li>
@@ -49,7 +48,7 @@
 					<li><a href="https://drive.google.com/open?id=11r3hSNeN2SAeoxgr51aPb_kaoT5b3pYK">Move</a></li>
 					<li><a href="#" data-toggle="modal" data-target="#Outmaneuvre">Outmaneuvre</a> 104</li>
 					<li>Ready Weapon</li>
-					<li>Regain Footing</li>
+					<li><a href="#" data-toggle="modal" data-target="#RegainFooting">Regain Footing 92 </a></li>
 					<li>Struggle</li>
 					<li>Take Cover 91-92 </li>
 				</ul>
@@ -68,6 +67,7 @@
 					<li> <a href="#" data-toggle="modal" data-target="#Outmaneuvre">Outmaneuvre</a> 104</li>
 					<li> <a href="#" data-toggle="modal" data-target="#Surprise">Surprise</a> 105</li>
 					<li> Unarmed Combat</li>
+					<li> <a href="#" data-toggle="modal" data-target="#Withdraw">Withdraw from combat</a> 105</li>
 				</ul>
 				</td>
 			</tr>
@@ -189,7 +189,7 @@
 					If the Attacker succeeded roll damage and apply Damage Modifier if any 
 				</p>
 				<p>
-					If the Defender did <a href="#" data-toggle="modal" data-target="#PassiveBlocking">Passive Blocking</a> 93, 105 on the Hit Location that Attacker hit <a href="#" data-toggle="modal" data-target="#DamageReduction">reduce damage</a>
+					If the Defender did <a href="#" data-toggle="modal" data-target="#PassiveBlocking">Passive Blocking</a> 93, 105 on the Hit Location that Attacker hit <a href="#" data-toggle="modal" data-target="#DamageReduction">reduce damage</a> 
 				</p>
 				<p>
 					If the Defender succeeded <a href="#" data-toggle="modal" data-target="#DamageReduction">reduce damage more</a> 
@@ -593,7 +593,7 @@
 						<li> Most leaping Attacks are triggered as part of an ambush or at the conclusion of a Charge. </li>
 						<li> Some creatures have the ability to leap atop an opponent without the need for a run-up or superior height. </li>
 						<li>Leaping Attacks only work against opponents of up to twice the Attacker’s SIZ. </li>
-						<li>Target can Brace Combat Action, if aware of leap Attack. </li>
+						<li>Target can <a href="#" data-toggle="modal" data-target="#Brace">Brace Combat Action</a>, if aware of leap Attack. </li>
 						<p>
 							<h4>
 								Leaper’s Athletics vs Defender’s Brawn or Evade 
@@ -838,27 +838,49 @@
 				<p>
 					<ul>
 						<ul>
-							<li> The character can attempt to close on, or retreat from, an opponent; changing the range at which he is fighting to take best advantage of his weapon’s Reach or disengage from engagement entirely.</li>
-							<dl class="dl-horizontal"> 
-								<dt>Oppose Closing/Opening Range:</dt>
-								<dd> 
-									<ul class="list-inline">
-										<li>1. Either keep the range: Evade skills in an Opposed test. If initiator of the Change Range wins then he can close/open the range to a desired distance. If the opponent wins then the range is maintained.</li>
-										<li>2. Or Attack the changing character : make an Opposed Roll Combat Skill vs the initiators’ Evade. If the opponent wins, he strikes the character, and any difference in Level of Success results in Special Effects. The initiator changes the distance</li>
-									</ul>
-									</li>
-								</dd>
-							</dl>
-							<dl class="dl-horizontal"> 
-								<dt> Beyond range</dt>
-								<dd> Can withdraw without Special Effect</dd>
-								<dt> Longer Range</dt>
-								<dd> If fighting at the Reach of the longer weapon, then the user of the shorter weapon cannot directly Attack the wielder of the longer. They are still considered to be engaged. User of the shorter weapon can Attack the longer weapon, try to close the range between them, or hope to win an applicable Special Effect. </dd>
-								<dt> Shorter Range</dt>
-								<dd> Longer weapon cannot Parry. The longer weapon’s Size is reduced as many steps as the difference between the two weapons’ Reach, and only inflicts 1d3+1 damage
-								</dd>
-								</dd>
-							</dl>
+							<p>
+								The character can attempt to close on, or retreat from, an opponent; changing the range at which he is fighting to take best advantage of his weapon’s Reach or disengage from engagement entirely. 
+							</p>
+							<h3>
+								Oppose Closing/Opening Range: 
+							</h3>
+							<h4>
+								Either keep the range 
+							</h4>
+							<h5>
+								Evade skills in an Opposed test. 
+							</h5>
+							<li> If initiator of the Change Range wins then he can close/open the range to a desired distance. </li>
+							<li>If the opponent wins then the range is maintained.</li>
+							<h4>
+								Or Attack the changing character 
+							</h4>
+							<h5>
+								Make an Opposed Roll Combat Skill vs the initiators’ Evade 
+							</h5>
+							<li>If the opponent wins, he strikes the character, and any difference in Level of Success results in Special Effects. 
+							<li>
+								The initiator changes the distance 
+							</li>
+							</li>
+							<h2>Results</h2>
+							<h3>
+								Beyond range
+							</h3>
+							<li>
+								Can withdraw without Special Effect
+							</li>
+							<h3>
+								Longer Range
+							</h3>
+							<li> If fighting at the Reach of the longer weapon, then the user of the shorter weapon cannot directly Attack the wielder of the longer. They are still considered to be engaged. </li>
+							<li>User of the shorter weapon can Attack the longer weapon, try to close the range between them, or hope to win an applicable Special Effect. </li>
+							<h3>
+								Shorter Range
+							</h3>
+							<li> Longer weapon cannot Parry.</li>
+							<li> The longer weapon’s Size is reduced as many steps as the difference between the two weapons’ Reach</li>
+							<li>Longer weapon only inflicts 1d3+1 damage </li>
 				</p>
 			</div>
 			<div class="modal-footer">
@@ -1336,7 +1358,77 @@
 				<li>Knockback damage is counted before any reductions.</li>
 				<li> Easy Acrobatics or standard Athletics roll to avoid falling prone. </li>
 				<li> Thrust backwards one metre for each 5 points of damage (or fraction thereof) in excess of their SIZ. </li>
-				<li> Brace Combat Action may affect knockback.</li>
+				<li> <a href="#" data-toggle="modal" data-target="#Brace">Brace</a> Combat Action may affect knockback.</li>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="Brace" role="dialog">
+	<div class="modal-dialog">
+<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button> 
+				<h4 class="modal-title">
+					Brace 91 
+				</h4>
+			</div>
+			<div class="modal-body">
+				<li>Take a firm chance and lean into the attack</li>
+				<li>Against Knockback or Leaping Attacks SIZ = 1.5x</li>
+				<li>Against Bash Special Effect SIZ = 2x</li>
+				<li>When character moves - brace is lost </li>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="Withdraw" role="dialog">
+	<div class="modal-dialog">
+<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button> 
+				<h4 class="modal-title">
+					Withdraw from Combat 
+				</h4>
+			</div>
+			<div class="modal-body">
+				<p>
+					In your turn use proactive action to: 
+				</p>
+				<li>Use <a href="#" data-toggle="modal" data-target="#ChangeRange">Change Range</a> to open range to beyond range</li>
+				<li>Win and use Withdraw Special Effect</li>
+				<li>Win all opponents in <a href="#" data-toggle="modal" data-target="#Outmaneuvre">Outmaneuvre</a></li>
+				<li><a href="#" data-toggle="modal" data-target="#MountedCombat">Mounted</a> withdraw freely from engagement on your turn provided your mount moves faster than the opponent, and the mount itself is not engaged in attacking. </li>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="RegainFooting" role="dialog">
+	<div class="modal-dialog">
+<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button> 
+				<h4 class="modal-title">
+					Regain Footing 92 
+				</h4>
+			</div>
+			<div class="modal-body">
+				<li> Unengaged can regain his footing from being tripped or knocked down. </li>
+				<li> Engaged, must win an opposed test of Brawn or Athletics with the opponent before standing. </li>
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
