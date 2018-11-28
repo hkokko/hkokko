@@ -11,16 +11,25 @@
 	</script>
 </head>
 <body>
-<div class="container">
+<!-- 
+Created by hkokko https://notesfrompavis.blog
+ -->
+<header>
 	<h2>
-		Combat flow for Mythras 
+		<center>
+			Combat flow for Mythras 
+		</center>
 	</h2>
+</header>
+<div class="container">
 <!-- Trigger the modal with a button -->
 	<h3>
-		Order of actions 
+		<center>
+			Order of actions 
+		</center>
 	</h3>
 	<p>
-		Roll Initiative (Initiative Bonus+d10) at start of combat only 
+		Roll Initiative (Initiative Bonus+d10) <strong>at start of combat only</strong>. Highest initiative acts first. 
 	</p>
 	<p>
 		Fatigue check (CON in seconds rounded to next Combat Round. Combat Round = 5 seconds) -> Endurance roll or lose Fatigue level 
@@ -75,8 +84,11 @@
 				<td>Ranged Combat</td>
 				<td> 
 				<ul class="list-inline">
+					<li>Aiming 108</li>
+					<li>Firing into a crowd 108</li>
+					<li>Firing on the move 108</li>
 					<li><a href="#" data-toggle="modal" data-target="#Reload">Ranged weapons reload</a> 109 </li>
-					<li><a href="https://drive.google.com/open?id=1nSdoLdkGnCXzeBbHd8TOyCyvH6QsqcwO">Ranged combat Special Effects</a> </li>
+					<li><a href="https://drive.google.com/open?id=1nSdoLdkGnCXzeBbHd8TOyCyvH6QsqcwO">Ranged combat situational modifiers</a> </li>
 					<ul>
 				</td>
 			</tr>
@@ -100,7 +112,6 @@
 		</tr>
 		</tfoot> 
 	</table>
-	
 	<table class="table table-striped">
 		<thead>
 			<tr>
@@ -135,7 +146,7 @@
 				<ul class="list-inline">
 					<li>Defender spends an Action Point to make a reactive action per threat, applies the <a href="#" data-toggle="modal" data-target="#SituationalModifiers">situational modifiers</a> and notes the Parry die roll and result. Any # of reactions can be made - once per threat</li>
 					<li> <a href="#" data-toggle="modal" data-target="#Counterspell">Counterspell</a> 92 </li>
-					<li> Evade</li>
+					<li> <a href="#" data-toggle="modal" data-target="#Evade">Evade</a> 41, 103</li>
 					<li> <a href="#" data-toggle="modal" data-target="#Interrupt">Interrupt</a> 92</li>
 					<li> Parry</li>
 				</ul>
@@ -187,7 +198,7 @@
 					If the SE chosen is not Choose Location, roll to determine what Hit Location has been hit 
 				</p>
 				<p>
-					If the Attacker succeeded roll damage and apply Damage Modifier if any 
+					If the Attacker succeeded roll damage and apply Damage Bonus if any 
 				</p>
 				<p>
 					If the Defender did <a href="#" data-toggle="modal" data-target="#PassiveBlocking">Passive Blocking</a> 93, 105 on the Hit Location that Attacker hit <a href="#" data-toggle="modal" data-target="#DamageReduction">reduce damage</a> 
@@ -220,15 +231,17 @@
 		<li> <a href="https://drive.google.com/open?id=18N89VZGZ58zs_zjnRIrEAL5cf4HNbYAY">Monster Island Weapons</a></li>
 		<li> <a href="https://drive.google.com/open?id=0B0J20AZXw-hDRV83NXJrVFVQVm8">Shields</a></li>
 	</ul>
-	<center>
-		“Mythras” is a Registered Trademark of The Design Mechanism Inc, and is used with permission. 
-	</center>
-	<center>
-		<a href="https://notesfrompavis.blog">NotesFromPavis Blog - other useful Mythras material</a> 
-	</center>
-	<center>
-		Creating enemies (monsters, NPCs) in Mythras <a href="https://notesfrompavis.blog/2014/05/13/rq6-encounter-tool-feature-recap-for-busy-gms/">with couple of clicks</a> 
-	</center>
+	<footer>
+		<center>
+			“Mythras” is a Registered Trademark of The Design Mechanism Inc, and is used with permission. 
+		</center>
+		<center>
+			<a href="https://notesfrompavis.blog">NotesFromPavis Blog - other useful Mythras material</a> 
+		</center>
+		<center>
+			Creating enemies (monsters, NPCs) in Mythras <a href="https://notesfrompavis.blog/2014/05/13/rq6-encounter-tool-feature-recap-for-busy-gms/">with couple of clicks</a> 
+		</center>
+	</footer>
 <!-- Modal -->
 	<div class="modal fade" id="Outmaneuvre" role="dialog">
 		<div class="modal-dialog">
@@ -470,8 +483,8 @@
 						</p>
 						<li>At least one full Combat Round of movement at running or sprinting speed prior to contact </li>
 						<li>Attack roll minus one Difficulty Grade </li>
-						<li>+1 step to bipedal Attacker’s Damage Modifier</li>
-						<li>+2 steps to the the Damage Modifier of four (or more) legged creatures by two steps<</li>
+						<li>+1 step to bipedal Attacker’s Damage Bonus</li>
+						<li>+2 steps to the the Damage Bonus of four (or more) legged creatures by two steps<</li>
 						<li>+1 step to the size of the attacking weapon </li>
 						<p>
 							<h4>
@@ -479,7 +492,7 @@
 							</h4>
 						</p>
 						<li>Parrying <a href="#" data-toggle="modal" data-target="#Knockback">Knockback</a> if damage > SIZ</li>
-						<li>Evade</li>
+						<li><a href="#" data-toggle="modal" data-target="#Evade">Evade</a> </li>
 						<li>Counterattacking. 
 						<p>
 							Both sides are treated as having failed to Parry, although they can still benefit from Passive Blocking. 
@@ -488,7 +501,7 @@
 							Longest Reach strikes first 
 						</p>
 						<p>
-							Longshafted impaling weapons which can be ‘set’ against a Charge, the Defender may use opponent's or its mount' damage modifier </li>
+							Longshafted impaling weapons which can be ‘set’ against a Charge, the Defender may use opponent's or its mount' Damage Bonus </li>
 					</ul>
 				</p>
 			</div>
@@ -537,7 +550,7 @@
 				<p>
 					<li> Use the momentum to carry the Attacker through, and clear of an engagement. </li>
 					<li> It is normally limited to mounted combatants or creatures of significant size unlikely to be hindered by an impact with smaller foes. </li>
-					<li> The speed of such Charges prevents the Attacker and Defender from exchanging more than <b>a single action with each other</b>,namely the Charge Attack, and the Defender’s reaction to it (<b>Parry, Evade or Counterattack</b>). </li>
+					<li> The speed of such Charges prevents the Attacker and Defender from exchanging more than <b>a single action with each other</b>,namely the Charge Attack, and the Defender’s reaction to it (<b>Parry, <a href="#" data-toggle="modal" data-target="#Evade">Evade</a> or Counterattack</b>). </li>
 					<li> Charges can be done by running, swimming or flying creatures. </li>
 				</p>
 			</div>
@@ -597,7 +610,7 @@
 						<li>Target can <a href="#" data-toggle="modal" data-target="#Brace">Brace Combat Action</a>, if aware of leap Attack. </li>
 						<p>
 							<h4>
-								Leaper’s Athletics vs Defender’s Brawn or Evade 
+								Leaper’s Athletics vs Defender’s Brawn or <a href="#" data-toggle="modal" data-target="#Evade">Evade</a> 
 							</h4>
 						</p>
 						<li>Quadruped may substitute Athletics for Evade, making Attacker’s Athletics roll one Difficulty Grade harder. </li>
@@ -692,9 +705,7 @@
 				<dl class="dl-horizontal"> 
 					<dt> 
 						<dt> 1 turn to reload</dt>
-						<dd> 
-							Atlatl
-						</dd>
+						<dd> Atlatl </dd>
 						<dt> 2 turns to reload </dt>
 						<dd> Blowgun, Long Bow, Recurve Bow, Short Bow </dd>
 						<dt> 3 turns to reload</dt>
@@ -702,7 +713,6 @@
 						<dt> 4 turns to reload</dt>
 						<dd> Heavy Crossbow, Staff Sling</dd>
 					</dt>
-				
 				</dl>
 			</div>
 			<div class="modal-footer">
@@ -1508,7 +1518,33 @@
 				<li>Unarmed Prowess Trait raises blocks and parries to Medium</li>
 				<li>Strike or Grapple - must be announced beforehand</li>
 				<li>Unarmed combat can parry a weapon attack </li>
-				<li><a href="#" data-toggle="modal" data-target="#ShorterReach">Step inside the reach of opponent for Shorter Reach </li>
+				<li><a href="#" data-toggle="modal" data-target="#ShorterReach">Step inside the reach of opponent for Shorter Reach </a></li>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="Evade" role="dialog">
+	<div class="modal-dialog">
+<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button> 
+				<h4 class="modal-title">
+					Evade 
+				</h4>
+			</div>
+			<div class="modal-body">
+				<ul>
+					<li> Avoid missiles - vs Combat style of attacker</li>
+					<li> Thwarting a trap - vs either POT pr skill rating of maker</li>
+					<li> Evading a spell - vs spell caster's score in the casting skill</li>
+					<li> Manoeuvering in combat - vs attacker's evade skill </li>
+					<li> Whatever the result - evader is prone (and suffers Formidable on evade and fighting until up) and needs to <a href="#" data-toggle="modal" data-target="#RegainFooting">Regain Footing 92 </a> next Turn</li>
+					<li> Mounted character can only evade by flinging themselves from the saddle </li>
+				</ul>
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
@@ -1533,7 +1569,7 @@
 				<li>Withdraw freely from engagement on his turn provided his mount moves faster than the opponent, and the mount itself is not engaged in attacking.</li>
 				<li>Use Action Point to substitute either his own Combat Style or Ride skill instead of his mount’s, to defend it against Attacks.</li>
 				<li>Combine his SIZ with his mount’s for the purposes of avoiding Knockback, provided he passes an unOpposed Ride roll.</li>
-				<li>When Charging with a braced weapon, substitute his own Damage Modifier for that of his mount. A weapon braced for a Charging Attack cannot be used to Parry. If the weapon impales it must be left in the body of the target, or else break or dismount the rider as the mount continues past.</li>
+				<li>When Charging with a braced weapon, substitute his own Damage Bonus for that of his mount. A weapon braced for a Charging Attack cannot be used to Parry. If the weapon impales it must be left in the body of the target, or else break or dismount the rider as the mount continues past.</li>
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
