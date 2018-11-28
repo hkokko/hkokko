@@ -66,7 +66,7 @@
 					<li> <a href="#" data-toggle="modal" data-target="#MountedCombat">Mounted Combat</a> 104</li>
 					<li> <a href="#" data-toggle="modal" data-target="#Outmaneuvre">Outmaneuvre</a> 104</li>
 					<li> <a href="#" data-toggle="modal" data-target="#Surprise">Surprise</a> 105</li>
-					<li> Unarmed Combat</li>
+					<li> <a href="#" data-toggle="modal" data-target="#Unarmed">Unarmed Combat</a> 105,222</li>
 					<li> <a href="#" data-toggle="modal" data-target="#Withdraw">Withdraw from combat</a> 105</li>
 				</ul>
 				</td>
@@ -75,7 +75,7 @@
 				<td>Ranged Combat</td>
 				<td> 
 				<ul class="list-inline">
-					<li>Ranged weapons reload 109 </li>
+					<li><a href="#" data-toggle="modal" data-target="#Reload">Ranged weapons reload</a> 109 </li>
 					<li><a href="https://drive.google.com/open?id=1nSdoLdkGnCXzeBbHd8TOyCyvH6QsqcwO">Ranged combat Special Effects</a> </li>
 					<ul>
 				</td>
@@ -100,10 +100,11 @@
 		</tr>
 		</tfoot> 
 	</table>
+	
 	<table class="table table-striped">
 		<thead>
 			<tr>
-				<th colcpan="2">Free Actions (Attacker and Defender)</th>
+				<caption><strong>Free Actions (Attacker and Defender)</strong></caption>
 			</tr>
 		</thead>
 		<tbody>
@@ -223,7 +224,7 @@
 		“Mythras” is a Registered Trademark of The Design Mechanism Inc, and is used with permission. 
 	</center>
 	<center>
-		Other <a href="https://notesfrompavis.blog">useful Mythras and Glorantha material</a> 
+		<a href="https://notesfrompavis.blog">NotesFromPavis Blog - other useful Mythras material</a> 
 	</center>
 	<center>
 		Creating enemies (monsters, NPCs) in Mythras <a href="https://notesfrompavis.blog/2014/05/13/rq6-encounter-tool-feature-recap-for-busy-gms/">with couple of clicks</a> 
@@ -379,8 +380,8 @@
 			<div class="modal-body">
 				<p>
 					<li>One Level of Success (critical vs success, success vs failure) grants one Special Effect</li>
-					<li>Two degrees of success (critical vs failure, success vs fumble) grants two Special Effects</li>
-					<li>Three degrees of success (critical vs fumble) grants three Special Effects</li>
+					<li>Two Levels of Success (critical vs failure, success vs fumble) grants two Special Effects</li>
+					<li>Three Levels of Success (critical vs fumble) grants three Special Effects</li>
 				</p>
 			</div>
 			<div class="modal-footer">
@@ -677,6 +678,40 @@
 	</div>
 </div>
 <!-- Modal -->
+<div class="modal fade" id="Reload" role="dialog">
+	<div class="modal-dialog">
+<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button> 
+				<h4 class="modal-title">
+					Reload 
+				</h4>
+			</div>
+			<div class="modal-body">
+				<dl class="dl-horizontal"> 
+					<dt> 
+						<dt> 1 turn to reload</dt>
+						<dd> 
+							Atlatl
+						</dd>
+						<dt> 2 turns to reload </dt>
+						<dd> Blowgun, Long Bow, Recurve Bow, Short Bow </dd>
+						<dt> 3 turns to reload</dt>
+						<dd> Light crossbow, Sling</dd>
+						<dt> 4 turns to reload</dt>
+						<dd> Heavy Crossbow, Staff Sling</dd>
+					</dt>
+				
+				</dl>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Modal -->
 <div class="modal fade" id="SituationalModifiers" role="dialog">
 	<div class="modal-dialog">
 <!-- Modal content-->
@@ -859,24 +894,22 @@
 								Make an Opposed Roll Combat Skill vs the initiators’ Evade 
 							</h5>
 							<li>If the opponent wins, he strikes the character, and any difference in Level of Success results in Special Effects. 
-							<li>
-								The initiator changes the distance 
+							<li> The initiator changes the distance </li>
 							</li>
-							</li>
-							<h2>Results</h2>
+							<h2>
+								Results 
+							</h2>
 							<h3>
-								Beyond range
+								Beyond range 
 							</h3>
-							<li>
-								Can withdraw without Special Effect
-							</li>
+							<li> Can withdraw without Special Effect </li>
 							<h3>
-								Longer Range
+								Longer Range 
 							</h3>
 							<li> If fighting at the Reach of the longer weapon, then the user of the shorter weapon cannot directly Attack the wielder of the longer. They are still considered to be engaged. </li>
 							<li>User of the shorter weapon can Attack the longer weapon, try to close the range between them, or hope to win an applicable Special Effect. </li>
 							<h3>
-								Shorter Range
+								Shorter Range 
 							</h3>
 							<li> Longer weapon cannot Parry.</li>
 							<li> The longer weapon’s Size is reduced as many steps as the difference between the two weapons’ Reach</li>
@@ -1451,6 +1484,31 @@
 				<li>Prone unable to gain footing can be compelled to surrender</li>
 				<li> If unengaged with an opponent, the character can regain his footing from being tripped or knocked down. </li>
 				<li> If engaged, the character must win an Opposed test of Brawn or Athletics with the opponent before standing.</li>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="modal fade" id="Unarmed" role="dialog">
+	<div class="modal-dialog">
+<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button> 
+				<h4 class="modal-title">
+					Unarmed 
+				</h4>
+			</div>
+			<div class="modal-body">
+				<li>Target needs to be within reach of the attacker’s natural weapons</li>
+				<li>Human attacks are size Small, Reach Touch and 1d3 damage</li>
+				<li>Unarmed Prowess Trait raises blocks and parries to Medium</li>
+				<li>Strike or Grapple - must be announced beforehand</li>
+				<li>Unarmed combat can parry a weapon attack </li>
+				<li><a href="#" data-toggle="modal" data-target="#ShorterReach">Step inside the reach of opponent for Shorter Reach </li>
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
