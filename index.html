@@ -11,23 +11,64 @@
 	</script>
 </head>
 <body>
+
 <!-- 
 Created by hkokko https://notesfrompavis.blog
  -->
+
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Mythras Logo</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="https://notesfrompavis.blog/2014/02/04/rq6-charts-and-tables/">Mythras Charts <span class="sr-only">(current)</span></a></li>
+  
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mythras Encounter Generator <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://skoll.xyz/mythras_eg/">Encounter Generator</a></li>
+                        <li role="separator" class="divider"></li>
+            <li><a href="https://notesfrompavis.blog/2014/05/13/rq6-encounter-tool-feature-recap-for-busy-gms/">Generator Background Description</a></li>
+            <li><a href="https://notesfrompavis.blog/2015/01/25/rq-encounter-tool-101-generating-encounters-guide/">Guide to Generating Encounters</a></li>
+            <li><a href="https://notesfrompavis.blog/2015/02/01/rq-encounter-tool-101-part-2-creating-npcs-and-parties/">Creating NPC's and Parties</a></li>
+
+          </ul>
+        </li>
+        <li><a href="https://notesfrompavis.blog">Notes From Pavis</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#Contact">Contact</a></li>
+      </ul>
+     
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+ 
+
+
 <header>
-	<h2>
+	<h1>
 		<center>
 			Combat flow for Mythras 
 		</center>
-	</h2>
+	</h1>
 </header>
 <div class="container">
 <!-- Trigger the modal with a button -->
-	<h3>
+	<h2>
 		<center>
 			Order of actions 
 		</center>
-	</h3>
+	</h2>
 	<p>
 		Roll Initiative (Initiative Bonus+d10) <strong>at start of combat only</strong>. Highest initiative acts first. 
 	</p>
@@ -37,7 +78,7 @@ Created by hkokko https://notesfrompavis.blog
 	<table class="table table-striped">
 		<thead>
 			<tr>
-				<th colcpan="2">Attacker</th>
+				<th colcpan="2"><span class="label label-primary">Attacker</span></th>
 				<th>Attacker spends an Action Point to make an Attack, selects Combat Action, applies the <a href="#" data-toggle="modal" data-target="#SituationalModifiers">situational modifiers</a> and notes the Attack die roll and result</th>
 			</tr>
 		</thead>
@@ -115,7 +156,7 @@ Created by hkokko https://notesfrompavis.blog
 	<table class="table table-striped">
 		<thead>
 			<tr>
-				<caption><strong>Free Actions (Attacker and Defender)</strong></caption>
+				<caption><strong><span class="label label-primary">Free Actions (Attacker and Defender)</span> </strong></caption>
 			</tr>
 		</thead>
 		<tbody>
@@ -136,7 +177,7 @@ Created by hkokko https://notesfrompavis.blog
 	</table>
 	<table class="table table-striped">
 		<thead>
-			<th colcpan="2">Defender</th>
+			<th colcpan="2"><span class="label label-primary">Defender</span></th>
 			<th>Defender chooses whether to spend Action Point for Defense</th>
 		</thead>
 		<tbody>
@@ -172,7 +213,7 @@ Created by hkokko https://notesfrompavis.blog
 	<table class="table table-striped">
 		<thead>
 			<tr>
-				<th colcpan="2">Compare Results</th>
+				<th colcpan="2"><span class="label label-primary">Compare Results</span></th>
 			</tr>
 		</thead>
 		<tbody>
@@ -268,6 +309,37 @@ Created by hkokko https://notesfrompavis.blog
 				<div class="modal-footer">
 					<center>
 					Mythras Core Rules 104
+					<center>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="Contact" role="dialog">
+		<div class="modal-dialog">
+<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="contact">&times;</button> 
+					<h4 class="modal-title">
+						Contact
+					</h4>
+				</div>
+				<div class="modal-body">
+					<p>
+						<ul>
+		
+							
+							<li> Email notesfrompavis at icloud.com</li>
+							</ul>
+						
+					</p>
+				</div>
+								
+				<div class="modal-footer">
+					<center>
+					<a href="https://notesfrompavis.blog">NotesFromPavis Blog - other useful Mythras material</a> 
 					<center>
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
 				</div>
