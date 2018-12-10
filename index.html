@@ -1,49 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 	<title>Combat flow for Mythras </title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+<!--><meta name="viewport" content="width=device-width, initial-scale=1"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<!--< link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
 	</script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
-	</script>
+	</script> -->
 </head>
 <body>
 <!-- 
 Created by hkokko https://notesfrompavis.blog
  -->
 <div class="container-fluid">
-<!-- Brand and toggle get grouped for better mobile display -->
-	<nav role="navigation" class="navbar navbar-default">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="#">Mythras Logo</a> 
-		</div>
-<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav">
-				<li class="active"><a href="https://notesfrompavis.blog/2014/02/04/rq6-charts-and-tables/">Mythras Charts <span class="sr-only">(current)</span></a></li>
-				<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mythras Encounter Generator <span class="caret"></span></a> 
-				<ul class="dropdown-menu">
-					<li><a href="http://skoll.xyz/mythras_eg/">Encounter Generator</a></li>
-					<li role="separator" class="divider"></li>
-					<li><a href="https://notesfrompavis.blog/2014/05/13/rq6-encounter-tool-feature-recap-for-busy-gms/">Generator Background Description</a></li>
-					<li><a href="https://notesfrompavis.blog/2015/01/25/rq-encounter-tool-101-generating-encounters-guide/">Guide to Generating Encounters</a></li>
-					<li><a href="https://notesfrompavis.blog/2015/02/01/rq-encounter-tool-101-part-2-creating-npcs-and-parties/">Creating NPC's and Parties</a></li>
-				</ul>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">Mythras Logo</a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> 
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active"> <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> </li>
+				<li class="nav-item"> <a class="nav-link" href="https://notesfrompavis.blog/2014/02/04/rq6-charts-and-tables/">Mythras Charts</a> </li>
+				<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Mythras Encounter Generator </a> 
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="dropdown-item" href="http://skoll.xyz/mythras_eg/">Mythras Encounter Generator</a> 
+					<div class="dropdown-divider">
+					</div>
+					<a class="dropdown-item" href="https://notesfrompavis.blog/2014/05/13/rq6-encounter-tool-feature-recap-for-busy-gms/">Generator Background Description</a> <a class="dropdown-item" href="https://notesfrompavis.blog/2015/01/25/rq-encounter-tool-101-generating-encounters-guide/">Guide to Generating Encounters</a> <a class="dropdown-item" href="https://notesfrompavis.blog/2015/02/01/rq-encounter-tool-101-part-2-creating-npcs-and-parties/">Creating NPC's and Parties</a> 
+				</div>
 				</li>
-				<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Weapons <span class="caret"></span></a> 
-				<ul class="dropdown-menu">
-					<li> <a href="https://drive.google.com/open?id=1ojiECPFKqLsQqLqOZ9dJpMVdRh8oj-xU">Standard Weapons</a></li>
-					<li> <a href="https://drive.google.com/open?id=0B0J20AZXw-hDQm96MHZ4eUJmbnM">Gloranthan Weapons</a></li>
-					<li> <a href="https://drive.google.com/open?id=0B0J20AZXw-hDQS05dmp6Q1Zzd0k">Eastern Weapons</a></li>
-					<li> <a href="https://drive.google.com/open?id=18N89VZGZ58zs_zjnRIrEAL5cf4HNbYAY">Monster Island Weapons</a></li>
-					<li> <a href="https://drive.google.com/open?id=0B0J20AZXw-hDRV83NXJrVFVQVm8">Shields</a></li>
-				</ul>
+				<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Weapons </a> 
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="dropdown-item" href="https://drive.google.com/open?id=1ojiECPFKqLsQqLqOZ9dJpMVdRh8oj-xU">Standard Weapons</a> <a class="dropdown-item" href="https://drive.google.com/open?id=0B0J20AZXw-hDQm96MHZ4eUJmbnM">Gloranthan Weapons</a> <a class="dropdown-item" href="https://drive.google.com/open?id=0B0J20AZXw-hDQS05dmp6Q1Zzd0k">Eastern Weapons</a> <a class="dropdown-item" href="https://drive.google.com/open?id=0B0J20AZXw-hDQS05dmp6Q1Zzd0k">Monster Island Weapons</a> <a class="dropdown-item" href="https://drive.google.com/open?id=0B0J20AZXw-hDRV83NXJrVFVQVm8">Shields</a> 
+				</div>
 				</li>
-				<li><a href="https://notesfrompavis.blog">Notes From Pavis</a></li>
-				<li><a href="#" data-toggle="modal" data-target="#Contact">Contact</a></li>
+				<li class="nav-item"> <a class="nav-link" href="https://notesfrompavis.blog">Notes From Pavis</a> </li>
+				<li class="nav-item"> <a class="nav-link" href="#" data-toggle="modal" data-target="#Contact">Contact</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -65,324 +59,336 @@ Created by hkokko https://notesfrompavis.blog
 			Order of actions 
 		</center>
 	</h2>
-	<div class="panel panel-primary">
-<!-- Default panel contents -->
-		<div class="panel-heading">
-			Start of combat 
-		</div>
-		<div class="panel-body">
-			<p>
+<!-- <div class="card" style="width: 18rem;"> -->
+	<div class="card border-primary mb-3">
+		<div class="card-body">
+			<h5 class="card-header">
+				Start of combat 
+			</h5>
+			<p class="card-text">
 				Roll Initiative (Initiative Bonus+d10) <strong>at start of combat only</strong>. 
 			</p>
 		</div>
-	</div>
-	<div class="panel panel-primary">
-<!-- Default panel contents -->
-		<div class="panel-heading">
-			Start of Combat Round 
-		</div>
-		<div class="panel-body">
-			<p>
-				Highest Initiative acts first (taking his turn). 
-			</p>
-			<div class="panel panel-success">
-<!-- Default panel contents -->
-				<div class="panel-heading">
-					<a href="https://notesfrompavis.files.wordpress.com/2018/03/2018-03-07_07-18-42.png">Fatigue </a> Check: Endurance roll or lose Fatigue level 
-				</div>
-				<div class="panel-body">
-					<table class="table table-striped">
-						<td> CON </td>
-						<td> 1-5 </td>
-						<td> 6-10 </td>
-						<td> 11-15 </td>
-						<td> 16-20 </td>
-						<tbody>
-							<td> Combat Round: </td>
-							<td> Every 2nd </td>
-							<td> Every 3rd </td>
-							<td> Every 4th </td>
-							<td> Every 5th </td>
-						</tbody>
-					</table>
+		<div class="card border-primary mb-3">
+			<div class="card-body">
+				<h5 class="card-header">
+					Start of Combat Round 
+				</h5>
+				<div class="card-text">
+					<p>
+						Highest Initiative acts first (taking his turn). 
+					</p>
+					<div class="card border-primary mb-3">
+						<div class="card-body">
+							<h5 class="card-header">
+								<a href="https://notesfrompavis.files.wordpress.com/2018/03/2018-03-07_07-18-42.png">Fatigue </a> Check: Endurance roll or lose Fatigue level 
+							</h5>
+							<div class="card-text">
+								<table class="table table-striped">
+									<td> CON </td>
+									<td> 1-5 </td>
+									<td> 6-10 </td>
+									<td> 11-15 </td>
+									<td> 16-20 </td>
+									<tbody>
+										<td> Combat Round: </td>
+										<td> Every 2nd </td>
+										<td> Every 3rd </td>
+										<td> Every 4th </td>
+										<td> Every 5th </td>
+									</tbody>
+								</table>
+								<p>
+									Fatigue <a href="https://notesfrompavis.files.wordpress.com/2018/03/2018-03-07_07-18-42.png">effect</a> 78 
+								</p>
+								<p>
+									Check if any <i>spells or effects</i> (from Special Effects or wounds etc) that are <strong>dependent on <i># of Turns</i> launch or end </strong> 
+								</p>
+								<p>
+									Check if any <i>spells or effects</i> (from Special Effects or wounds etc) that are <strong>dependent on <i># of Combat Rounds</i> launch or end</strong> 
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="card border-primary mb-3">
+						<div class="card-body">
+							<h5 class="card-header">
+								Start of a Cycle in Combat Round 
+							</h5>
+							<div class="card-text">
+								<div class="card border-primary mb-3">
+									<div class="card-body">
+										<h5 class="card-header">
+											Attacker 
+										</h5>
+										<div class="card-text">
+											<table class="table table-striped">
+												<thead>
+													<tr>
+														<th colcpan="2"><span class="label label-primary">Attacker</span></th>
+														<th>Attacker spends an Action Point if it can. </th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td> Use Action Point for Proactive Action 
+														<td> 
+														<p>
+															Select Combat Action to make an Attack 
+														</p>
+														<p>
+															Apply the <a href="#" data-toggle="modal" data-target="#SituationalModifiers">situational modifiers</a> 
+														</p>
+														<p>
+															Note the Attack die roll and result. 
+														</p>
+														<p>
+															Attacker <i>loses Passive Block for the attacking weapon</i> 
+														</p>
+														<p>
+															Can do Free Action 
+														</p>
+														</td>
+													</tr>
+													<tr>
+														<td>Combat Actions - Proactive</td>
+														<td> 
+														<ul class="list-inline">
+															<li class="list-inline-item">Attack</li>
+															<li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#Brace">Brace 91 </a></li>
+															<li class="list-inline-item">Cast Magic 91</li>
+															<li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#ChangeRange">Change Range 106</a></li>
+															<li class="list-inline-item">Delay 91</li>
+															<li class="list-inline-item">Dither 91</li>
+															<li class="list-inline-item">Hold Magic 91</li>
+															<li class="list-inline-item">Mount 91</li>
+															<li class="list-inline-item"><a href="https://drive.google.com/open?id=11r3hSNeN2SAeoxgr51aPb_kaoT5b3pYK">Move 91</a></li>
+															<li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#Outmaneuvre">Outmaneuvre</a> 104</li>
+															<li class="list-inline-item">Ready Weapon 92</li>
+															<li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#RegainFooting">Regain Footing 92 </a></li>
+															<li class="list-inline-item">Struggle 92</li>
+															<li class="list-inline-item">Take Cover 91-92 </li>
+														</ul>
+														</td>
+													</tr>
+													<tr>
+														<td>Combat</td>
+														<td> 
+														<ul class="list-inline">
+															<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#Charging">Charging</a> </li>
+															<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#ChargingIntoContact">into contact</a></li>
+															<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#ChargingThroughContact">through Contact</a> 102</li>
+															<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#Falling">Falling and combat (Prone fights at Formidable)</a></li>
+															<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#LeapingAttacks">Leaping Attacks</a> 104</li>
+															<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#MountedCombat">Mounted Combat</a> 104</li>
+															<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#Outmaneuvre">Outmaneuvre</a> 104</li>
+															<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#Surprise">Surprise</a> 105</li>
+															<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#Unarmed">Unarmed Combat</a> 105,222</li>
+															<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#Withdraw">Withdraw from combat</a> 105</li>
+														</ul>
+														</td>
+													</tr>
+													<tr>
+														<td>Ranged Combat</td>
+														<td> 
+														<ul class="list-inline">
+															<li class="list-inline-item">Aiming 108</li>
+															<li class="list-inline-item">Firing into a crowd 108</li>
+															<li class="list-inline-item">Firing on the move 108</li>
+															<li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#Reload">Ranged weapons reload</a> 109 </li>
+															<li class="list-inline-item"><a href="https://drive.google.com/open?id=1nSdoLdkGnCXzeBbHd8TOyCyvH6QsqcwO">Ranged combat situational modifiers</a> </li>
+														</ul>
+														</td>
+													</tr>
+													<tr>
+														<td>Magic</td>
+														<td> 
+														<ul class="list-inline">
+															<li class="list-inline-item"> Magic in Combat </li>
+															<li class="list-inline-item"> <a href="https://drive.google.com/open?id=1u5xZlxve0snFnxB4m-GR2LXCad9xkcL2">Magic situational effects</a></li>
+															<li class="list-inline-item"> Running out of Magic Points 117</li>
+															<li class="list-inline-item"> Shaman fights</li>
+															<li class="list-inline-item"> <a href="https://drive.google.com/open?id=0B0J20AZXw-hDOC13RjlBRHQxZXM">Sorcery in Combat</a></li>
+															<li class="list-inline-item"> Spirit Combat 137 </li>
+															<li class="list-inline-item"> <a href="https://drive.google.com/open?id=12-3T8W4E2TT_nSavY0QtBdZu1qFxf4UH">Spirit Combat Special Effects</a> </li>
+														</ul>
+														</td>
+													</tr>
+													<tr>
+														<td> If cannot use Action Point 
+														<td> 
+														<p>
+															Can do Free Action 
+														</p>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div class="card border-primary mb-3">
+									<div class="card-body">
+										<h5 class="card-header">
+											<span class="label label-primary"> 
+											<caption><strong><span class="label label-primary">Free Actions (Attacker and Defender)</span> </strong></caption>
+											</span> 
+										</h5>
+										<div class="card-text">
+											<table class="table table-striped">
+												<tbody>
+													<tr>
+														<td>Free Actions</td>
+														<td> 
+														<ul class="list-inline">
+															<li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#PassiveBlocking">Passive Blocking</a> 93, 105</li>
+															<li class="list-inline-item">Assess Situation 93</li>
+															<li class="list-inline-item">Drop Weapon 93</li>
+															<li class="list-inline-item">Signal 93</li>
+															<li class="list-inline-item">Speak 93</li>
+														</ul>
+														<ul class="list-inline">
+															<li class="list-inline-item">Use Group Luck Point 81, 93</li>
+															<li class="list-inline-item">Use Luck Point 81, 93</li>
+														</ul>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div class="card border-primary mb-3">
+									<div class="card-body">
+										<h5 class="card-header">
+											Defender chooses whether to spend Action Point for Defense 
+										</h5>
+										<table class="table table-striped">
+											<tbody>
+												<tr>
+													<td>Use Action Point for Reactive Action</td>
+													<td> 
+													<ul class="list-inline">
+														<li class="list-inline-item">Defender spends an Action Point to make a reactive action per threat, applies the <a href="#" data-toggle="modal" data-target="#SituationalModifiers">situational modifiers</a> and notes the Parry die roll and result. Any # of reactions can be made - once per threat</li>
+														<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#Counterspell">Counterspell</a> 92 </li>
+														<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#Evade">Evade</a> 41, 103</li>
+														<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#Interrupt">Interrupt</a> 92</li>
+														<li class="list-inline-item"> Parry 93</li>
+													</ul>
+													</td>
+												</tr>
+												<tr>
+													<td> No Action Point used for Defense </td>
+													<td> 
+													<p>
+														Treat as failed Parry 
+													</p>
+													<p>
+														<a href="#" data-toggle="modal" data-target="#PassiveBlocking">Passive Blocking (Ward Location)</a> 93, 105 
+													</p>
+													<p>
+														Can do Free Action 
+													</p>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="card border-primary mb-3">
+									<div class="card-body">
+										<h5 class="card-header">
+											<span class="label label-primary">Compare Results</span> 
+										</h5>
+										<div class="card-text">
+											<table class="table table-striped">
+												<thead>
+													<tr>
+														<th colcpan="2"><span class="label label-primary"></span></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Compare <a href="#" data-toggle="modal" data-target="#DegreeOfSuccess">Level of Success</a></td>
+														<td> 
+														<p>
+															Winner chooses Special Effect/s used 
+														</p>
+														<ul class="list-inline">
+															<li class="list-inline-item"> <a href="https://drive.google.com/open?id=10YOZE9eNg3mX_F01i1W3PubREESAlqrZ">Offensive</a>,</li>
+															<li class="list-inline-item"> <a href="https://drive.google.com/open?id=1i9zYMq1LBcsnc3t7vbZlIKH-FN3v9xOb">Defensive</a></li>
+															<li class="list-inline-item"><a href="https://drive.google.com/open?id=12-3T8W4E2TT_nSavY0QtBdZu1qFxf4UH">Spirit Combat Special Effects</a></li>
+															<li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#NaturalWeaponSpecialEffects">Select Natural Weapons Special Effects</a> 222</li>
+															<li class="list-inline-item">If Special Effect require Opposed Test from the opponent make one now and compare it to the original Attack or Parry value</li>
+														</ul>
+														</td>
+													</tr>
+													<tr>
+														<td> Compare damage </td>
+														<td> 
+														<p>
+															If the chosen Special Effect is not Choose Location, roll to determine what Hit Location has been hit 
+														</p>
+														<p>
+															If the Attacker succeeded roll damage and apply Damage Bonus if any 
+														</p>
+														<p>
+															If the Defender did <a href="#" data-toggle="modal" data-target="#PassiveBlocking">Passive Blocking</a> 93, 105 on the Hit Location that Attacker hit <a href="#" data-toggle="modal" data-target="#DamageReduction">reduce damage</a> 
+														</p>
+														<p>
+															If the Defender succeeded <a href="#" data-toggle="modal" data-target="#DamageReduction">reduce damage more</a> 
+														</p>
+														<p>
+															See how much of the <a href=" https://drive.google.com/open?id=1mX8eLOAbb35fBGR8rvwOk07jfHEAxzxH">(reduced)</a> damage penetrates any armor and protective magic worn 
+														</p>
+														<ul class="list-inline">
+															<li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#Knockback">Knockback</a> if unreduced damage > SIZ</li>
+															<li class="list-inline-item"><a href="https://drive.google.com/open?id=1BfW-gVsmmZhLBfk5uKB6-5LQ0CYd4g8h">Healing and wounds</a></li>
+															<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#HeroicLastAction">Heroic Last Action</a> 111</li>
+														</ul>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card border-primary mb-3">
+								<div class="card-body">
+									<h5 class="card-header">
+										<span class="label label-primary">End of Cycle in Combat Round</span> 
+									</h5>
+									<div class="card-text">
+										<li class="list-inline-item">If the opponent is still there and willing to fight repeat with another Cycle in the Combat Round until both sides run out of Action Points</li>
+										<li class="list-inline-item">When everybody is out of Action Points - start another Combat Round</li>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-			<p>
-				Fatigue <a href="https://notesfrompavis.files.wordpress.com/2018/03/2018-03-07_07-18-42.png">effect</a> 78 
-			</p>
-			<p>
-				Check if any <i>spells or effects</i> (from Special Effects or wounds etc) that are <strong>dependent on <i># of Turns</i> launch or end </strong> 
-			</p>
-			<p>
-				Check if any <i>spells or effects</i> (from Special Effects or wounds etc) that are <strong>dependent on <i># of Combat Rounds</i> launch or end</strong> 
-			</p>
-			<div class="panel panel-primary">
-<!-- Default panel contents -->
-				<div class="panel-heading">
-					Start of a Cycle in Combat Round 
-				</div>
-				<div class="panel-body">
-					<table class="table table-striped">
-						<thead>
-							<tr>
-								<th colcpan="2"><span class="label label-primary">Attacker</span></th>
-								<th>Attacker spends an Action Point if it can. </th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td> Use Action Point for Proactive Action 
-								<td> 
-								<p>
-									Select Combat Action to make an Attack 
-								</p>
-								<p>
-									Apply the <a href="#" data-toggle="modal" data-target="#SituationalModifiers">situational modifiers</a> 
-								</p>
-								<p>
-									Note the Attack die roll and result. 
-								</p>
-								<p>
-									Attacker <i>loses Passive Block for the attacking weapon</i> 
-								</p>
-								<p>
-									Can do Free Action 
-								</p>
-								</td>
-							</tr>
-							<tr>
-								<td>Combat Actions - Proactive</td>
-								<td> 
-								<ul class="list-inline">
-									<li>Attack</li>
-									<li><a href="#" data-toggle="modal" data-target="#Brace">Brace 91 </a></li>
-									<li>Cast Magic 91</li>
-									<li><a href="#" data-toggle="modal" data-target="#ChangeRange">Change Range 106</a></li>
-									<li>Delay 91</li>
-									<li>Dither 91</li>
-									<li>Hold Magic 91</li>
-									<li>Mount 91</li>
-									<li><a href="https://drive.google.com/open?id=11r3hSNeN2SAeoxgr51aPb_kaoT5b3pYK">Move 91</a></li>
-									<li><a href="#" data-toggle="modal" data-target="#Outmaneuvre">Outmaneuvre</a> 104</li>
-									<li>Ready Weapon 92</li>
-									<li><a href="#" data-toggle="modal" data-target="#RegainFooting">Regain Footing 92 </a></li>
-									<li>Struggle 92</li>
-									<li>Take Cover 91-92 </li>
-								</ul>
-								</td>
-							</tr>
-							<tr>
-								<td>Combat</td>
-								<td> 
-								<ul class="list-inline">
-									<li> <a href="#" data-toggle="modal" data-target="#Charging">Charging</a> </li>
-									<li> <a href="#" data-toggle="modal" data-target="#ChargingIntoContact">into contact</a></li>
-									<li> <a href="#" data-toggle="modal" data-target="#ChargingThroughContact">through Contact</a> 102</li>
-									<li> <a href="#" data-toggle="modal" data-target="#Falling">Falling and combat (Prone fights at Formidable)</a></li>
-									<li> <a href="#" data-toggle="modal" data-target="#LeapingAttacks">Leaping Attacks</a> 104</li>
-									<li> <a href="#" data-toggle="modal" data-target="#MountedCombat">Mounted Combat</a> 104</li>
-									<li> <a href="#" data-toggle="modal" data-target="#Outmaneuvre">Outmaneuvre</a> 104</li>
-									<li> <a href="#" data-toggle="modal" data-target="#Surprise">Surprise</a> 105</li>
-									<li> <a href="#" data-toggle="modal" data-target="#Unarmed">Unarmed Combat</a> 105,222</li>
-									<li> <a href="#" data-toggle="modal" data-target="#Withdraw">Withdraw from combat</a> 105</li>
-								</ul>
-								</td>
-							</tr>
-							<tr>
-								<td>Ranged Combat</td>
-								<td> 
-								<ul class="list-inline">
-									<li>Aiming 108</li>
-									<li>Firing into a crowd 108</li>
-									<li>Firing on the move 108</li>
-									<li><a href="#" data-toggle="modal" data-target="#Reload">Ranged weapons reload</a> 109 </li>
-									<li><a href="https://drive.google.com/open?id=1nSdoLdkGnCXzeBbHd8TOyCyvH6QsqcwO">Ranged combat situational modifiers</a> </li>
-								</ul>
-								</td>
-							</tr>
-							<tr>
-								<td>Magic</td>
-								<td> 
-								<ul class="list-inline">
-									<li> Magic in Combat </li>
-									<li> <a href="https://drive.google.com/open?id=1u5xZlxve0snFnxB4m-GR2LXCad9xkcL2">Magic situational effects</a></li>
-									<li> Running out of Magic Points 117</li>
-									<li> Shaman fights</li>
-									<li> <a href="https://drive.google.com/open?id=0B0J20AZXw-hDOC13RjlBRHQxZXM">Sorcery in Combat</a></li>
-									<li> Spirit Combat 137 </li>
-									<li> <a href="https://drive.google.com/open?id=12-3T8W4E2TT_nSavY0QtBdZu1qFxf4UH">Spirit Combat Special Effects</a> </li>
-								</ul>
-								</td>
-							</tr>
-							<tr>
-								<td> If cannot use Action Point 
-								<td> 
-								<p>
-									Can do Free Action 
-								</p>
-								</td>
-							</tr>
-						</tbody>
-						<tfoot> 
-						<tr>
-						</tr>
-						</tfoot> 
-					</table>
-					<table class="table table-striped">
-						<thead>
-							<th colcpan="2"> 
-							<caption><strong><span class="label label-primary">Free Actions (Attacker and Defender)</span> </strong></caption>
-							</th>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Free Actions</td>
-								<td> 
-								<ul class="list-inline">
-									<li><a href="#" data-toggle="modal" data-target="#PassiveBlocking">Passive Blocking</a> 93, 105</li>
-									<li>Assess Situation 93</li>
-									<li>Drop Weapon 93</li>
-									<li>Signal 93</li>
-									<li>Speak 93</li>
-								</ul>
-								<ul class="list-inline">
-									<li>Use Group Luck Point 81, 93</li>
-									<li>Use Luck Point 81, 93</li>
-								</ul>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-					<table class="table table-striped">
-						<thead>
-							<th colcpan="2"><span class="label label-primary">Defender</span></th>
-							<th>Defender chooses whether to spend Action Point for Defense</th>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Use Action Point for Reactive Action</td>
-								<td> 
-								<ul class="list-inline">
-									<li>Defender spends an Action Point to make a reactive action per threat, applies the <a href="#" data-toggle="modal" data-target="#SituationalModifiers">situational modifiers</a> and notes the Parry die roll and result. Any # of reactions can be made - once per threat</li>
-									<li> <a href="#" data-toggle="modal" data-target="#Counterspell">Counterspell</a> 92 </li>
-									<li> <a href="#" data-toggle="modal" data-target="#Evade">Evade</a> 41, 103</li>
-									<li> <a href="#" data-toggle="modal" data-target="#Interrupt">Interrupt</a> 92</li>
-									<li> Parry 93</li>
-								</ul>
-								</td>
-							</tr>
-							<tr>
-								<td> No Action Point used for Defense </td>
-								<td> 
-								<p>
-									Treat as failed Parry 
-								</p>
-								<p>
-									<a href="#" data-toggle="modal" data-target="#PassiveBlocking">Passive Blocking (Ward Location)</a> 93, 105 
-								</p>
-								<p>
-									Can do Free Action 
-								</p>
-								</td>
-							</tr>
-						</tbody>
-						<tfoot> 
-						<tr>
-						</tr>
-						</tfoot> 
-					</table>
-				</div>
-			</div>
-			<div class="panel panel-primary">
-<!-- Default panel contents -->
-				<div class="panel-heading">
-					<span class="label label-primary">Compare Results</span> 
-				</div>
-				<div class="panel-body">
-					<table class="table table-striped">
-						<thead>
-							<tr>
-								<th colcpan="2"><span class="label label-primary"></span></th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Compare <a href="#" data-toggle="modal" data-target="#DegreeOfSuccess">Level of Success</a></td>
-								<td> 
-								<p>
-									Winner chooses Special Effect/s used 
-								</p>
-								<ul class="list-inline">
-									<li> <a href="https://drive.google.com/open?id=10YOZE9eNg3mX_F01i1W3PubREESAlqrZ">Offensive</a>,</li>
-									<li> <a href="https://drive.google.com/open?id=1i9zYMq1LBcsnc3t7vbZlIKH-FN3v9xOb">Defensive</a></li>
-									<li><a href="https://drive.google.com/open?id=12-3T8W4E2TT_nSavY0QtBdZu1qFxf4UH">Spirit Combat Special Effects</a></li>
-									<li><a href="#" data-toggle="modal" data-target="#NaturalWeaponSpecialEffects">Select Natural Weapons Special Effects</a> 222</li>
-									<li>If Special Effect require Opposed Test from the opponent make one now and compare it to the original Attack or Parry value</li>
-								</ul>
-								</td>
-							</tr>
-							<tr>
-								<td> Compare damage </td>
-								<td> 
-								<p>
-									If the chosen Special Effect is not Choose Location, roll to determine what Hit Location has been hit 
-								</p>
-								<p>
-									If the Attacker succeeded roll damage and apply Damage Bonus if any 
-								</p>
-								<p>
-									If the Defender did <a href="#" data-toggle="modal" data-target="#PassiveBlocking">Passive Blocking</a> 93, 105 on the Hit Location that Attacker hit <a href="#" data-toggle="modal" data-target="#DamageReduction">reduce damage</a> 
-								</p>
-								<p>
-									If the Defender succeeded <a href="#" data-toggle="modal" data-target="#DamageReduction">reduce damage more</a> 
-								</p>
-								<p>
-									See how much of the <a href=" https://drive.google.com/open?id=1mX8eLOAbb35fBGR8rvwOk07jfHEAxzxH">(reduced)</a> damage penetrates any armor and protective magic worn 
-								</p>
-								<ul class="list-inline">
-									<li><a href="#" data-toggle="modal" data-target="#Knockback">Knockback</a> if unreduced damage > SIZ</li>
-									<li><a href="https://drive.google.com/open?id=1BfW-gVsmmZhLBfk5uKB6-5LQ0CYd4g8h">Healing and wounds</a></li>
-									<li> <a href="#" data-toggle="modal" data-target="#HeroicLastAction">Heroic Last Action</a> 111</li>
-								</ul>
-								</td>
-							</tr>
-						</tbody>
-						<tfoot> 
-						<tr>
-						</tr>
-						</tfoot> 
-					</table>
-				</div>
-			</div>
+			<footer>
+				<center>
+					“Mythras” is a Registered Trademark of The Design Mechanism Inc, and is used with permission. 
+				</center>
+				<center>
+					<a href="https://notesfrompavis.blog">NotesFromPavis Blog - other useful Mythras material</a> 
+				</center>
+				<center>
+					Creating enemies (monsters, NPCs) in Mythras <a href="https://notesfrompavis.blog/2014/05/13/rq6-encounter-tool-feature-recap-for-busy-gms/">with couple of clicks</a> 
+				</center>
+				<center>
+					<i>Some campaigns make Fatigue, Encumbrance, Effect of Reach (Shorter/Longer) and Group Luck Points optional rules</i> 
+				</center>
+				<center>
+					<i>Narrow corridors and Choose Location as critical only are house rules. </i> 
+				</center>
+			</footer>
 		</div>
 	</div>
-	<div class="panel panel-primary">
-<!-- Default panel contents -->
-		<div class="panel-heading">
-			<span class="label label-primary">End of Cycle in Combat Round</span> 
-		</div>
-		<div class="panel-body">
-			<li>If the opponent is still there and willing to fight repeat with another Cycle in the Combat Round until both sides run out of Action Points</li>
-			<li>When everybody is out of Action Points - start another Combat Round</li>
-		</div>
-	</div>
-	<footer>
-		<center>
-			“Mythras” is a Registered Trademark of The Design Mechanism Inc, and is used with permission. 
-		</center>
-		<center>
-			<a href="https://notesfrompavis.blog">NotesFromPavis Blog - other useful Mythras material</a> 
-		</center>
-		<center>
-			Creating enemies (monsters, NPCs) in Mythras <a href="https://notesfrompavis.blog/2014/05/13/rq6-encounter-tool-feature-recap-for-busy-gms/">with couple of clicks</a> 
-		</center>
-		<center>
-			<i>Some campaigns make Fatigue, Encumbrance, Effect of Reach (Shorter/Longer) and Group Luck Points optional rules</i> 
-		</center>
-		<center>
-			<i>Narrow corridors and Choose Location as critical only are house rules. </i> 
-		</center>
-	</footer>
+</div>
 </div>
 <!-- Modal -->
 <div class="modal fade" id="Outmaneuvre" role="dialog">
@@ -390,7 +396,6 @@ Created by hkokko https://notesfrompavis.blog
 <!-- Modal content-->
 		<div class="modal-content">
 			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
 				<h4 class="modal-title">
 					Outmanoeuvring 
 				</h4>
@@ -406,12 +411,16 @@ Created by hkokko https://notesfrompavis.blog
 				</p>
 			</div>
 			<div class="modal-footer">
-				<center>
-					Mythras Core Rules 104 
-				</center>
-				<center>
-					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
-				</center>
+				<p>
+					<center>
+						Mythras Core Rules 104 
+					</center>
+				</p>
+				<p>
+					<center>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+					</center>
+				</p>
 			</div>
 		</div>
 	</div>
@@ -453,7 +462,6 @@ Created by hkokko https://notesfrompavis.blog
 <!-- Modal content-->
 		<div class="modal-content">
 			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
 				<h4 class="modal-title">
 					Passive Blocking / Ward Location 
 				</h4>
@@ -473,11 +481,10 @@ Created by hkokko https://notesfrompavis.blog
 				</p>
 			</div>
 			<div class="modal-footer">
-				</footer>
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
 				<center>
 					Mythras Core Rules 93,105 
 				</center>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
 			</div>
 		</div>
 	</div>
@@ -489,7 +496,6 @@ Created by hkokko https://notesfrompavis.blog
 <!-- Modal content-->
 		<div class="modal-content">
 			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
 				<h4 class="modal-title">
 					Counterspell 
 				</h4>
@@ -500,10 +506,10 @@ Created by hkokko https://notesfrompavis.blog
 				<li> Intercepting magic negates the entire spell or miracle, even those with multiple targets or areas of effect. </li>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
 				<center>
 					Mythras Core Rules 92 
 				</center>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
 			</div>
 		</div>
 	</div>
@@ -515,7 +521,6 @@ Created by hkokko https://notesfrompavis.blog
 <!-- Modal content-->
 		<div class="modal-content">
 			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
 				<h4 class="modal-title">
 					Interrupt 
 				</h4>
@@ -532,10 +537,10 @@ Created by hkokko https://notesfrompavis.blog
 				</p>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
 				<center>
 					Mythras Core Rules 92 
 				</center>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
 			</div>
 		</div>
 	</div>
@@ -546,7 +551,6 @@ Created by hkokko https://notesfrompavis.blog
 <!-- Modal content-->
 		<div class="modal-content">
 			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
 				<h4 class="modal-title">
 					Heroic Last Action 
 				</h4>
@@ -560,10 +564,10 @@ Created by hkokko https://notesfrompavis.blog
 				</p>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
 				<center>
 					Mythras Core Rules 111 
 				</center>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
 			</div>
 		</div>
 	</div>
@@ -575,7 +579,6 @@ Created by hkokko https://notesfrompavis.blog
 <!-- Modal content-->
 		<div class="modal-content">
 			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
 				<h4 class="modal-title">
 					Level of Success 
 				</h4>
@@ -599,7 +602,6 @@ Created by hkokko https://notesfrompavis.blog
 <!-- Modal content-->
 		<div class="modal-content">
 			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
 				<h4 class="modal-title">
 					Damage Reduction 
 				</h4>
@@ -658,7 +660,6 @@ Created by hkokko https://notesfrompavis.blog
 <!-- Modal content-->
 		<div class="modal-content">
 			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
 				<h4 class="modal-title">
 					Charging 
 				</h4>
@@ -696,10 +697,10 @@ Created by hkokko https://notesfrompavis.blog
 				</p>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
 				<center>
 					Mythras Core Rules 102 
 				</center>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
 			</div>
 		</div>
 	</div>
@@ -710,7 +711,6 @@ Created by hkokko https://notesfrompavis.blog
 <!-- Modal content-->
 		<div class="modal-content">
 			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
 				<h4 class="modal-title">
 					Charging into contact 
 				</h4>
@@ -723,10 +723,10 @@ Created by hkokko https://notesfrompavis.blog
 				</p>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
 				<center>
 					Mythras Core Rules 102 
 				</center>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
 			</div>
 		</div>
 	</div>
@@ -737,7 +737,6 @@ Created by hkokko https://notesfrompavis.blog
 <!-- Modal content-->
 		<div class="modal-content">
 			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
 				<h4 class="modal-title">
 					Charging through contact 
 				</h4>
@@ -751,10 +750,10 @@ Created by hkokko https://notesfrompavis.blog
 				</p>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
 				<center>
 					Mythras Core Rules 102 
 				</center>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
 			</div>
 		</div>
 	</div>
@@ -765,7 +764,6 @@ Created by hkokko https://notesfrompavis.blog
 <!-- Modal content-->
 		<div class="modal-content">
 			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
 				<h4 class="modal-title">
 					Surprise 
 				</h4>
@@ -780,10 +778,10 @@ Created by hkokko https://notesfrompavis.blog
 				</p>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
 				<center>
 					Mythras Core Rules 105 
 				</center>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
 			</div>
 		</div>
 	</div>
@@ -794,7 +792,6 @@ Created by hkokko https://notesfrompavis.blog
 <!-- Modal content-->
 		<div class="modal-content">
 			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
 				<h4 class="modal-title">
 					Leaping Attacks 
 				</h4>
@@ -828,10 +825,10 @@ Created by hkokko https://notesfrompavis.blog
 				</p>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
 				<center>
 					Mythras Core Rules 104 
 				</center>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
 			</div>
 		</div>
 	</div>
@@ -842,7 +839,6 @@ Created by hkokko https://notesfrompavis.blog
 <!-- Modal content-->
 		<div class="modal-content">
 			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
 				<h4 class="modal-title">
 					Natural Weapon Special Effects 
 				</h4>
@@ -891,10 +887,10 @@ Created by hkokko https://notesfrompavis.blog
 				</p>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
 				<center>
 					Mythras Core Rules 222 
 				</center>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
 			</div>
 		</div>
 	</div>
@@ -905,7 +901,6 @@ Created by hkokko https://notesfrompavis.blog
 <!-- Modal content-->
 		<div class="modal-content">
 			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
 				<h4 class="modal-title">
 					Reload 
 				</h4>
@@ -925,10 +920,10 @@ Created by hkokko https://notesfrompavis.blog
 				</dl>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
 				<center>
 					Mythras Core Rules 109 
 				</center>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
 			</div>
 		</div>
 	</div>
@@ -939,7 +934,6 @@ Created by hkokko https://notesfrompavis.blog
 <!-- Modal content-->
 		<div class="modal-content">
 			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
 				<h4 class="modal-title">
 					Situational Modifiers 
 				</h4>
@@ -950,9 +944,9 @@ Created by hkokko https://notesfrompavis.blog
 						<dt>Situational modifiers</dt>
 						<dd> 
 							<ul class="list-inline">
-								<li><a href="https://drive.google.com/open?id=0B0J20AZXw-hDUm9iQVl1Zm5lcms">Close combat</a></li>
-								<li><a href="https://drive.google.com/open?id=1nSdoLdkGnCXzeBbHd8TOyCyvH6QsqcwO">Ranged</a></li>
-								<li><a href="https://drive.google.com/open?id=1u5xZlxve0snFnxB4m-GR2LXCad9xkcL2">Magic</a></li>
+								<li class="list-inline-item"><a href="https://drive.google.com/open?id=0B0J20AZXw-hDUm9iQVl1Zm5lcms">Close combat</a></li>
+								<li class="list-inline-item"><a href="https://drive.google.com/open?id=1nSdoLdkGnCXzeBbHd8TOyCyvH6QsqcwO">Ranged</a></li>
+								<li class="list-inline-item"><a href="https://drive.google.com/open?id=1u5xZlxve0snFnxB4m-GR2LXCad9xkcL2">Magic</a></li>
 							</ul>
 						</dd>
 					</dl>
@@ -963,109 +957,109 @@ Created by hkokko https://notesfrompavis.blog
 							<dt>Augment</dt>
 							<dd> 
 								<ul class="list-inline">
-									<li> <a href="#" data-toggle="modal" data-target="#Augmenting">Augmenting </a> 
+									<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#Augmenting">Augmenting </a> 
 								</ul>
 							</dd>
 							<dt>Enemy is - you will get</dt>
 							<dd> 
 								<ul class="list-inline" ">
-									<li>Is helpless target  </li>
-									<li><i>attacking from higher ground or is mounted </i></li>
+									<li class="list-inline-item">Is helpless target  </li>
+									<li class="list-inline-item"><i>attacking from higher ground or is mounted </i></li>
 									<strong> 
-									<li>Enemy attacking from behind</li>
+									<li class="list-inline-item">Enemy attacking from behind</li>
 									</strong> 
-									<li><a href="#" data-toggle="modal" data-target="#ShorterReach">Shorter Reach</a></li>
+									<li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#ShorterReach">Shorter Reach</a></li>
 								</ul>
 							</dd>
 							<dt>Position</dt>
 							<dd> 
 								<ul class="list-inline" ">
-									<li><a href="#" data-toggle="modal" data-target="#Formidable"><strong>Fighting while prone</strong>       </a> </li>
-									<li><i>Defending while on lower ground or against mounted </i></li>
+									<li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#Formidable"><strong>Fighting while prone</strong>       </a> </li>
+									<li class="list-inline-item"><i>Defending while on lower ground or against mounted </i></li>
 									<strong> 
-									<li>Defending against an Attack from behind</li>
+									<li class="list-inline-item">Defending against an Attack from behind</li>
 									</strong> <i> 
-									<li>Fighting while crouching or from one knee</li>
+									<li class="list-inline-item">Fighting while crouching or from one knee</li>
 									</i> <i> 
-									<li>Attacking in a confined situation</li>
+									<li class="list-inline-item">Attacking in a confined situation</li>
 									</i> <i> 
-									<li>Fighting while on unstable ground</li>
+									<li class="list-inline-item">Fighting while on unstable ground</li>
 									</i> 
-									<li>Narrow spaces (<3m) <a href="#" data-toggle="modal" data-target="#LargeSwungWeapons">Large swung weapons       </a> </li>
-									<li>Narrow spaces (<1.5m) <a href="#" data-toggle="modal" data-target="#MediumSwungWeapons">Medium swung weapons       </a></li>
-									<li><a href="#" data-toggle="modal" data-target="#ShorterReach">Shorter Reach</a></li>
+									<li class="list-inline-item">Narrow spaces (<3m) <a href="#" data-toggle="modal" data-target="#LargeSwungWeapons">Large swung weapons       </a> </li>
+									<li class="list-inline-item">Narrow spaces (<1.5m) <a href="#" data-toggle="modal" data-target="#MediumSwungWeapons">Medium swung weapons       </a></li>
+									<li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#ShorterReach">Shorter Reach</a></li>
 								</ul>
 							</dd>
 							<dt>Visibility</dt>
 							<dd> 
 								<ul class="list-inline">
 									<i> <strong> 
-									<li>Blinded</li>
+									<li class="list-inline-item">Blinded</li>
 									</strong></i> <i> <strong> 
-									<li>Fighting in pitch black</li>
+									<li class="list-inline-item">Fighting in pitch black</li>
 									</strong></i> <strong> 
-									<li>Fighting in partial darkness</li>
+									<li class="list-inline-item">Fighting in partial darkness</li>
 									</strong> <i> 
-									<li>Fighting in poor visibility (thick fog, snowstorm)</li>
+									<li class="list-inline-item">Fighting in poor visibility (thick fog, snowstorm)</li>
 									</i> 
 								</ul>
 							</dd>
 							<dt>Doing</dt>
 							<dd> 
 								<ul class="list-inline">
-									<li>Climbing, Riding</li>
-									<li>Swimming</li>
+									<li class="list-inline-item">Climbing, Riding</li>
+									<li class="list-inline-item">Swimming</li>
 									<i> 
-									<li>Firing into melee (Ranged combat)</li>
+									<li class="list-inline-item">Firing into melee (Ranged combat)</li>
 									</i> <strong> 
-									<li>Firing thru the melee (Ranged combat)</li>
+									<li class="list-inline-item">Firing thru the melee (Ranged combat)</li>
 									</strong> <strong> 
-									<li>Spirit Combat without Binding skill</li>
+									<li class="list-inline-item">Spirit Combat without Binding skill</li>
 									</strong> 
-									<li><a href="#" data-toggle="modal" data-target="#InSpiritCombat">In Spirit Combat </a></li>
+									<li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#InSpiritCombat">In Spirit Combat </a></li>
 								</ul>
 							</dd>
 							<dt>Fatigue</dt>
 							<dd> 
 								<ul class="list-inline">
-									<li><i> Winded</i></li>
-									<li><i> Tired</i></li>
-									<li><strong> Wearied</strong></li>
-									<li><strong> Exhausted</strong></li>
-									<li><i> <strong> Debilitated</strong></i></li>
-									<li><i> <strong> Incapacitated</strong></i></li>
-									<li><a href="#" data-toggle="modal" data-target="#Semiconscious">Semiconscious</a></li>
-									<li><a href="#" data-toggle="modal" data-target="#Comatose">Comatose</a></li>
-									<li>Dead</li>
+									<li class="list-inline-item"><i> Winded</i></li>
+									<li class="list-inline-item"><i> Tired</i></li>
+									<li class="list-inline-item"><strong> Wearied</strong></li>
+									<li class="list-inline-item"><strong> Exhausted</strong></li>
+									<li class="list-inline-item"><i> <strong> Debilitated</strong></i></li>
+									<li class="list-inline-item"><i> <strong> Incapacitated</strong></i></li>
+									<li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#Semiconscious">Semiconscious</a></li>
+									<li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#Comatose">Comatose</a></li>
+									<li class="list-inline-item">Dead</li>
 								</ul>
 							</dd>
 							<dt>Enc</dt>
 							<dd> 
 								<ul class="list-inline">
-									<li><a href="#" data-toggle="modal" data-target="#OneDifficulty GradeHarder">ENC carried > 2xSTR      </a></li>
-									<li><a href="#" data-toggle="modal" data-target="#TwoDifficulty GradesHarder">ENC carried > 3xSTR      </a></li>
-									<li><a href="#" data-toggle="modal" data-target="#CannotMove">ENC carried > 4xSTR</a></li>
+									<li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#OneDifficulty GradeHarder">ENC carried > 2xSTR      </a></li>
+									<li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#TwoDifficulty GradesHarder">ENC carried > 3xSTR      </a></li>
+									<li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#CannotMove">ENC carried > 4xSTR</a></li>
 								</ul>
 							</dd>
 							<dt>Weather</dt>
 							<dd> 
 								<ul class="list-inline">
 									<i> 
-									<li>Wind - Light Gale/Moderate Gale (STR 46-75)</li>
+									<li class="list-inline-item">Wind - Light Gale/Moderate Gale (STR 46-75)</li>
 									</i> <strong> 
-									<li>Wind - Strong Gale/Storm/Hurricane (STR 76-</li>
+									<li class="list-inline-item">Wind - Strong Gale/Storm/Hurricane (STR 76-</li>
 									</strong> 
 								</ul>
 							</dd>
 							<dt>Unfamiliar weapons</dt>
 							<dd> 
 								<ul class="list-inline">
-									<li><a href="#" data-toggle="modal" data-target="#DifferentWeapons">Using different weapons</a></li>
-									<li><a href="#" data-toggle="modal" data-target="#SubstantiallyDifferent">Substantially different weapon <i>(SIZ, length, method of use (Special Effects etc)</i>"</a></li>
-									<li><a href="#" data-toggle="modal" data-target="#ReasonablyDifferent">Reasonably different <i>(great vs broadsword)</i></a></li>
-									<li><a href="#" data-toggle="modal" data-target="#BroadlySimilar">Broadly similar <i>broadsword / shortsword)</i></a></li>
-									<li><a href="#" data-toggle="modal" data-target="#Similar">Similar <i>(scimitar vs broadsword)</i></a></li>
-									<li><a href="#" data-toggle="modal" data-target="#UnfamiliarWithFamiliar">Unfamiliar with familiar <i>(scimitar with shield instead of broadsword with shield)</i></a></li>
+									<li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#DifferentWeapons">Using different weapons</a></li>
+									<li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#SubstantiallyDifferent">Substantially different weapon <i>(SIZ, length, method of use (Special Effects etc)</i>"</a></li>
+									<li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#ReasonablyDifferent">Reasonably different <i>(great vs broadsword)</i></a></li>
+									<li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#BroadlySimilar">Broadly similar <i>broadsword / shortsword)</i></a></li>
+									<li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#Similar">Similar <i>(scimitar vs broadsword)</i></a></li>
+									<li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#UnfamiliarWithFamiliar">Unfamiliar with familiar <i>(scimitar with shield instead of broadsword with shield)</i></a></li>
 								</ul>
 							</dd>
 						</dl>
@@ -1076,13 +1070,13 @@ Created by hkokko https://notesfrompavis.blog
 				</p>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
 				<center>
 					Mythras Core Rules 50, 77, 79, 85, 88, 96, 101, 106, 108, 222 
 					<p>
 						Secrets of Blood Rock 
 					</p>
 				</center>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
 			</div>
 		</div>
 	</div>
@@ -1093,779 +1087,769 @@ Created by hkokko https://notesfrompavis.blog
 <!-- Modal content-->
 		<div class="modal-content">
 			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
 				<h4 class="modal-title">
 					Change Range 
 				</h4>
 			</div>
 			<div class="modal-body">
 				<p>
-					<p>
-						The character can attempt to close on, or retreat from, an opponent; changing the range at which he is fighting to take best advantage of his weapon’s Reach or disengage from engagement entirely. 
-					</p>
-					<h3>
-						Reach difference of <strong>two or more steps </strong> for range to make effect. 
-					</h3>
-					<div class="panel panel-primary">
-<!-- Default panel contents -->
-						<div class="panel-heading">
+					The character can attempt to close on, or retreat from, an opponent; changing the range at which he is fighting to take best advantage of his weapon’s Reach or disengage from engagement entirely. 
+				</p>
+				<h3>
+					Reach difference of <strong>two or more steps </strong> for range to make effect. 
+				</h3>
+				<div class="card border-primary mb-3">
+					<div class="card-body">
+						<h5 class="card-header">
 							Oppose Closing/Opening Range: 
-						</div>
-						<div class="panel-body">
-							<div class="panel-heading">
-								<strong> Either keep the range </strong> 
+						</h5>
+						<p class="card-text">
+							<div class="card border-primary mb-3">
+								<div class="card-body">
+									<h5 class="card-header">
+										<strong> Either keep the range </strong> 
+									</h5>
+									<p class="card-text">
+										Evade skills in an Opposed test. 
+										<li> If initiator of the Change Range wins then he can close/open the range to a desired distance. </li>
+										<li>If the opponent wins then the range is maintained.</li>
+								</div>
+								<div class="card-body">
+									<h5 class="card-header">
+										<strong> Or Attack the changing character </strong> 
+									</h5>
+									<p class="card-text">
+										Make an Opposed Roll Combat Skill vs the initiators’ Evade 
+										<li>If the opponent wins, he strikes the character, and any difference in Level of Success results in Special Effects. </li>
+										<li> The initiator changes the distance </li>
+								</div>
 							</div>
-							<div class="panel-body">
-								Evade skills in an Opposed test. 
-								<li> If initiator of the Change Range wins then he can close/open the range to a desired distance. </li>
-								<li>If the opponent wins then the range is maintained.</li>
+					</div>
+				</div>
+				<div class="card border-primary mb-3">
+					<div class="card-body">
+						<h5 class="card-header">
+							<strong>Results </strong> 
+						</h5>
+						<div class="card-text">
+							<div class="card border-primary mb-3">
+								<div class="card-body">
+									<h5 class="card-header">
+										Beyond range 
+									</h5>
+									<div class="card-text">
+										<li> Can withdraw without Special Effect </li>
+									</div>
+								</div>
 							</div>
-							<div class="panel-heading">
-								<strong> Or Attack the changing character </strong> 
+							<div class="card border-primary mb-3">
+								<div class="card-body">
+									<h5 class="card-header">
+										<a href=" https://drive.google.com/open?id=1eop-r3AtlgNWn1sjNc-PU0rBRm3Vlc_L">Longer Reach </a> 
+									</h5>
+									<div class="card-text">
+										<li> If fighting at the Reach of the longer weapon, then the user of the shorter weapon cannot directly Attack the wielder of the longer. They are still considered to be engaged. </li>
+										<li>User of the shorter weapon can Attack the longer weapon, try to close the range between them, or hope to win an applicable Special Effect. </li>
+									</div>
+								</div>
 							</div>
-							<div class="panel-body">
-								Make an Opposed Roll Combat Skill vs the initiators’ Evade 
-								<li>If the opponent wins, he strikes the character, and any difference in Level of Success results in Special Effects. </li>
-								<li> The initiator changes the distance </li>
+							<div class="card border-primary mb-3">
+								<div class="card-body">
+									<h5 class="card-header">
+										<a href="https://drive.google.com/open?id=1T3jok-ejxlvKMaT46OjlP-lctHz5JQyK">Shorter Reach</a> 
+									</h5>
+									<div class="card-text">
+										<li> Longer weapon cannot Parry.</li>
+										<li> The longer weapon’s Size is reduced as many steps as the difference between the two weapons’ Reach</li>
+										<li>Longer weapon only inflicts 1d3+1 damage </li>
+										<li><strong>Getting within Shorter Reach of Natural Weapons does not have the above limitations (Damage is normal, Can Parry, No reduction of Size)</strong></li>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="panel panel-primary">
-<!-- Default panel contents -->
-						<div class="panel-heading">
-							Results 
-						</div>
-						<div class="panel-body">
-							<h5>
-								Beyond range 
-							</h5>
-							<li> Can withdraw without Special Effect </li>
-							<h5>
-								<a href=" https://drive.google.com/open?id=1eop-r3AtlgNWn1sjNc-PU0rBRm3Vlc_L">Longer Reach </a> 
-							</h5>
-							<li> If fighting at the Reach of the longer weapon, then the user of the shorter weapon cannot directly Attack the wielder of the longer. They are still considered to be engaged. </li>
-							<li>User of the shorter weapon can Attack the longer weapon, try to close the range between them, or hope to win an applicable Special Effect. </li>
-							<h5>
-								<a href="https://drive.google.com/open?id=1T3jok-ejxlvKMaT46OjlP-lctHz5JQyK">Shorter Reach</a> 
-							</h5>
-							<li> Longer weapon cannot Parry.</li>
-							<li> The longer weapon’s Size is reduced as many steps as the difference between the two weapons’ Reach</li>
-							<li>Longer weapon only inflicts 1d3+1 damage </li>
-							<li><strong>Getting within Shorter Reach of Natural Weapons does not have the above limitations (Damage is normal, Can Parry, No reduction of Size)</strong></li>
-						</div>
-					</div>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
-				<center>
-					Mythras Core Rules 106, 222 
-				</center>
+				</div>
+				<div class="modal-footer">
+					<center>
+						Mythras Core Rules 106, 222 
+					</center>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 <!-- Modal -->
-<div class="modal fade" id="Formidable" role="dialog">
-	<div class="modal-dialog">
+	<div class="modal fade" id="Formidable" role="dialog">
+		<div class="modal-dialog">
 <!-- Modal content-->
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
-				<h4 class="modal-title">
-					Formidable 
-				</h4>
-			</div>
-			<div class="modal-body">
-				<p>
-					Formidable (=1/2) 
-				</p>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">
+						Formidable 
+					</h4>
+				</div>
+				<div class="modal-body">
+					<p>
+						Formidable (=1/2) 
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 <!-- Modal -->
-<div class="modal fade" id="OneDifficulty GradeHarder" role="dialog">
-	<div class="modal-dialog">
+	<div class="modal fade" id="OneDifficulty GradeHarder" role="dialog">
+		<div class="modal-dialog">
 <!-- Modal content-->
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
-				<h4 class="modal-title">
-					One Difficulty Grade Harder 
-				</h4>
-			</div>
-			<div class="modal-body">
-				<p>
-					One Difficulty Grade Harder 
-				</p>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">
+						One Difficulty Grade Harder 
+					</h4>
+				</div>
+				<div class="modal-body">
+					<p>
+						One Difficulty Grade Harder 
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 <!-- Modal -->
-<div class="modal fade" id="TwoDifficulty GradesHarder" role="dialog">
-	<div class="modal-dialog">
+	<div class="modal fade" id="TwoDifficulty GradesHarder" role="dialog">
+		<div class="modal-dialog">
 <!-- Modal content-->
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
-				<h4 class="modal-title">
-					Two Difficulty Grades Harder 
-				</h4>
-			</div>
-			<div class="modal-body">
-				<p>
-					Two Difficulty Grades Harder 
-				</p>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">
+						Two Difficulty Grades Harder 
+					</h4>
+				</div>
+				<div class="modal-body">
+					<p>
+						Two Difficulty Grades Harder 
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 <!-- Modal -->
-<div class="modal fade" id="LargeSwungWeapons" role="dialog">
-	<div class="modal-dialog">
+	<div class="modal fade" id="LargeSwungWeapons" role="dialog">
+		<div class="modal-dialog">
 <!-- Modal content-->
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
-				<h4 class="modal-title">
-					Large Swung Weapons 
-				</h4>
-			</div>
-			<div class="modal-body">
-				<p>
-					Except for thrusting weapons like spears 
-				</p>
-				<p>
-					Each step of Reach above Medium penalizes Combat Style by one Difficulty Grade. 
-				</p>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
-				<center>
-					Classic Fantasy 
-				</center>
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">
+						Large Swung Weapons 
+					</h4>
+				</div>
+				<div class="modal-body">
+					<p>
+						Except for thrusting weapons like spears 
+					</p>
+					<p>
+						Each step of Reach above Medium penalizes Combat Style by one Difficulty Grade. 
+					</p>
+				</div>
+				<div class="modal-footer">
+					<center>
+						Secrets of Blood Rock 
+					</center>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 <!-- Modal -->
-<div class="modal fade" id="MediumSwungWeapons" role="dialog">
-	<div class="modal-dialog">
+	<div class="modal fade" id="MediumSwungWeapons" role="dialog">
+		<div class="modal-dialog">
 <!-- Modal content-->
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
-				<h4 class="modal-title">
-					Medium Swung Weapons 
-				</h4>
-			</div>
-			<div class="modal-body">
-				<p>
-					Except for thrusting weapons like spears 
-				</p>
-				<p>
-					Each step of Reach above Short penalizes Combat Style by one Difficulty Grade. 
-				</p>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
-				<center>
-					Classic Fantasy 
-				</center>
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">
+						Medium Swung Weapons 
+					</h4>
+				</div>
+				<div class="modal-body">
+					<p>
+						Except for thrusting weapons like spears 
+					</p>
+					<p>
+						Each step of Reach above Short penalizes Combat Style by one Difficulty Grade. 
+					</p>
+				</div>
+				<div class="modal-footer">
+					<center>
+						Secrets of Blood Rock 
+					</center>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 <!-- Modal -->
-<div class="modal fade" id="Hopeless" role="dialog">
-	<div class="modal-dialog">
+	<div class="modal fade" id="Hopeless" role="dialog">
+		<div class="modal-dialog">
 <!-- Modal content-->
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
-				<h4 class="modal-title">
-					Hopeless 
-				</h4>
-			</div>
-			<div class="modal-body">
-				<p>
-					Hopeless 
-				</p>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">
+						Hopeless 
+					</h4>
+				</div>
+				<div class="modal-body">
+					<p>
+						Hopeless 
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 <!-- Modal -->
-<div class="modal fade" id="Automatic" role="dialog">
-	<div class="modal-dialog">
+	<div class="modal fade" id="Automatic" role="dialog">
+		<div class="modal-dialog">
 <!-- Modal content-->
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
-				<h4 class="modal-title">
-					Automatic 
-				</h4>
-			</div>
-			<div class="modal-body">
-				<p>
-					Automatic 
-				</p>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">
+						Automatic 
+					</h4>
+				</div>
+				<div class="modal-body">
+					<p>
+						Automatic 
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 <!-- Modal -->
-<div class="modal fade" id="CannotMove" role="dialog">
-	<div class="modal-dialog">
+	<div class="modal fade" id="CannotMove" role="dialog">
+		<div class="modal-dialog">
 <!-- Modal content-->
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
-				<h4 class="modal-title">
-					Cannot Move 
-				</h4>
-			</div>
-			<div class="modal-body">
-				<p>
-					Cannot Move 
-				</p>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">
+						Cannot Move 
+					</h4>
+				</div>
+				<div class="modal-body">
+					<p>
+						Cannot Move 
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 <!-- Modal -->
-<div class="modal fade" id="ShorterReach" role="dialog">
-	<div class="modal-dialog">
+	<div class="modal fade" id="ShorterReach" role="dialog">
+		<div class="modal-dialog">
 <!-- Modal content-->
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
-				<h4 class="modal-title">
-					<a href="https://drive.google.com/open?id=1T3jok-ejxlvKMaT46OjlP-lctHz5JQyK">Shorter Reach</a> 
-				</h4>
-			</div>
-			<div class="modal-body">
-				<p>
-					Size is reduced as many steps as the difference between the two weapons’ Reach 
-				</p>
-				<p>
-					Longer cannot Parry 
-				</p>
-				<p>
-					Longer has max 1d3+1 Damage 
-				</p>
-				<strong>Getting within Shorter Reach of Natural Weapons does not have the above limitations (Damage is normal, Can Parry, No reduction of Size)</strong> 
-				<p>
-				</p>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
-				<center>
-					Mythras Core Rules 108, 222 
-				</center>
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">
+						<a href="https://drive.google.com/open?id=1T3jok-ejxlvKMaT46OjlP-lctHz5JQyK">Shorter Reach</a> 
+					</h4>
+				</div>
+				<div class="modal-body">
+					<li> Size is reduced as many steps as the difference between the two weapons’ Reach </li>
+					<li> Longer cannot Parry </li>
+					<li> Longer has max 1d3+1 Damage </li>
+					<li> <strong>Getting within Shorter Reach of Natural Weapons does not have the above limitations (Damage is normal, Can Parry, No reduction of Size)</strong> </li>
+				</div>
+				<div class="modal-footer">
+					<center>
+						Mythras Core Rules 108, 222 
+					</center>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 <!-- Modal -->
-<div class="modal fade" id="Augmenting" role="dialog">
-	<div class="modal-dialog">
+	<div class="modal fade" id="Augmenting" role="dialog">
+		<div class="modal-dialog">
 <!-- Modal content-->
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
-				<h4 class="modal-title">
-					Augmenting 
-				</h4>
-			</div>
-			<div class="modal-body">
-				<p>
-					20% of Augmenting Skill (Critical and Fumble chances remain at unaugmented level) 
-				</p>
-				<p>
-					GM decides 
-				</p>
-				<li>Needs to be entertaining </li>
-				<li> Does it elicit an excited or emotional response? </li>
-				<li> Does it reveal something of character without being tediously repetitive. </li>
-				<li> Does it put your character in genuine risk. </li>
-				<li> Does it reveal something of the world</li>
-				<li> With passion needs to be in addition thematically and dramatically important</li>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
-				<center>
-					Mythras Core Rules 50 
-				</center>
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">
+						Augmenting 
+					</h4>
+				</div>
+				<div class="modal-body">
+					<p>
+						20% of Augmenting Skill (Critical and Fumble chances remain at unaugmented level) 
+					</p>
+					<p>
+						GM decides 
+					</p>
+					<li>Needs to be entertaining </li>
+					<li> Does it elicit an excited or emotional response? </li>
+					<li> Does it reveal something of character without being tediously repetitive. </li>
+					<li> Does it put your character in genuine risk. </li>
+					<li> Does it reveal something of the world</li>
+					<li> With passion needs to be in addition thematically and dramatically important</li>
+				</div>
+				<div class="modal-footer">
+					<center>
+						Mythras Core Rules 50 
+					</center>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 <!-- Modal -->
-<div class="modal fade" id="Semiconscious" role="dialog">
-	<div class="modal-dialog">
+	<div class="modal fade" id="Semiconscious" role="dialog">
+		<div class="modal-dialog">
 <!-- Modal content-->
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
-				<h4 class="modal-title">
-					Semiconscious 
-				</h4>
-			</div>
-			<div class="modal-body">
-				<p>
-					Hopeless 
-				</p>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">
+						Semiconscious 
+					</h4>
+				</div>
+				<div class="modal-body">
+					<p>
+						Hopeless 
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 <!-- Modal -->
-<div class="modal fade" id="Comatose" role="dialog">
-	<div class="modal-dialog">
+	<div class="modal fade" id="Comatose" role="dialog">
+		<div class="modal-dialog">
 <!-- Modal content-->
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
-				<h4 class="modal-title">
-					Comatose 
-				</h4>
-			</div>
-			<div class="modal-body">
-				<p>
-					No activities possible 
-				</p>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">
+						Comatose 
+					</h4>
+				</div>
+				<div class="modal-body">
+					<p>
+						No activities possible 
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 <!-- Modal -->
-<div class="modal fade" id="InSpiritCombat" role="dialog">
-	<div class="modal-dialog">
+	<div class="modal fade" id="InSpiritCombat" role="dialog">
+		<div class="modal-dialog">
 <!-- Modal content-->
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
-				<h4 class="modal-title">
-					In Spirit Combat 
-				</h4>
-			</div>
-			<div class="modal-body">
-				<p>
-					In mundane world can select spirit or other opponent 
-				</p>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">
+						In Spirit Combat 
+					</h4>
+				</div>
+				<div class="modal-body">
+					<p>
+						In mundane world can select spirit or other opponent 
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 <!-- Modal -->
-<div class="modal fade" id="DifferentWeapons" role="dialog">
-	<div class="modal-dialog">
+	<div class="modal fade" id="DifferentWeapons" role="dialog">
+		<div class="modal-dialog">
 <!-- Modal content-->
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
-				<h4 class="modal-title">
-					Different Weapon 
-				</h4>
-			</div>
-			<div class="modal-body">
-				<p>
-					Substantially different weapon (SIZ, length, method of use (Special Effects etc)) STR+DEX 
-				</p>
-				<p>
-					STR+DEX 
-				</p>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
-				<center>
-					Mythras Core Rules 88 
-				</center>
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">
+						Different Weapon 
+					</h4>
+				</div>
+				<div class="modal-body">
+					<p>
+						Substantially different weapon (SIZ, length, method of use (Special Effects etc)) STR+DEX 
+					</p>
+					<p>
+						STR+DEX 
+					</p>
+				</div>
+				<div class="modal-footer">
+					<center>
+						Mythras Core Rules 88 
+					</center>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 <!-- Modal -->
-<div class="modal fade" id="SubstantiallyDifferent" role="dialog">
-	<div class="modal-dialog">
+	<div class="modal fade" id="SubstantiallyDifferent" role="dialog">
+		<div class="modal-dialog">
 <!-- Modal content-->
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
-				<h4 class="modal-title">
-					Substantially Different 
-				</h4>
-			</div>
-			<div class="modal-body">
-				<p>
-					Substantially different weapon (SIZ, length, method of use (Special Effects etc)) 
-				</p>
-				<p>
-					STR+DEX 
-				</p>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
-				<center>
-					Mythras Core Rules 88 
-				</center>
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">
+						Substantially Different 
+					</h4>
+				</div>
+				<div class="modal-body">
+					<p>
+						Substantially different weapon (SIZ, length, method of use (Special Effects etc)) 
+					</p>
+					<p>
+						STR+DEX 
+					</p>
+				</div>
+				<div class="modal-footer">
+					<center>
+						Mythras Core Rules 88 
+					</center>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 <!-- Modal -->
-<div class="modal fade" id="ReasonablyDifferent" role="dialog">
-	<div class="modal-dialog">
+	<div class="modal fade" id="ReasonablyDifferent" role="dialog">
+		<div class="modal-dialog">
 <!-- Modal content-->
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
-				<h4 class="modal-title">
-					Reasonably Different Weapon <i>(great vs broadsword)</i> 
-				</h4>
-			</div>
-			<div class="modal-body">
-				<p>
-					Combat Style – 2 Difficulty Grades 
-				</p>
-				<p>
-					Cannot go less than STR+DEX 
-				</p>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
-				<center>
-					Mythras Core Rules 88 
-				</center>
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">
+						Reasonably Different Weapon <i>(great vs broadsword)</i> 
+					</h4>
+				</div>
+				<div class="modal-body">
+					<p>
+						Combat Style – 2 Difficulty Grades 
+					</p>
+					<p>
+						Cannot go less than STR+DEX 
+					</p>
+				</div>
+				<div class="modal-footer">
+					<center>
+						Mythras Core Rules 88 
+					</center>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 <!-- Modal -->
-<div class="modal fade" id="BroadlySimilar" role="dialog">
-	<div class="modal-dialog">
+	<div class="modal fade" id="BroadlySimilar" role="dialog">
+		<div class="modal-dialog">
 <!-- Modal content-->
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
-				<h4 class="modal-title">
-					Broadly similar <i>(broadsword / shortsword)</i> 
-				</h4>
-			</div>
-			<div class="modal-body">
-				<p>
-					Combat Style – 1 Difficulty Grade 
-				</p>
-				<p>
-					Cannot go less than STR+DEX 
-				</p>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
-				<center>
-					Mythras Core Rules 88 
-				</center>
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">
+						Broadly similar <i>(broadsword / shortsword)</i> 
+					</h4>
+				</div>
+				<div class="modal-body">
+					<p>
+						Combat Style – 1 Difficulty Grade 
+					</p>
+					<p>
+						Cannot go less than STR+DEX 
+					</p>
+				</div>
+				<div class="modal-footer">
+					<center>
+						Mythras Core Rules 88 
+					</center>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 <!-- Modal -->
-<div class="modal fade" id="Similar" role="dialog">
-	<div class="modal-dialog">
+	<div class="modal fade" id="Similar" role="dialog">
+		<div class="modal-dialog">
 <!-- Modal content-->
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
-				<h4 class="modal-title">
-					Similar <i>(scimitar / broadsword)</i> 
-				</h4>
-			</div>
-			<div class="modal-body">
-				<p>
-					Combat Style 
-				</p>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
-				<center>
-					Mythras Core Rules 88 
-				</center>
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">
+						Similar <i>(scimitar / broadsword)</i> 
+					</h4>
+				</div>
+				<div class="modal-body">
+					<p>
+						Combat Style 
+					</p>
+				</div>
+				<div class="modal-footer">
+					<center>
+						Mythras Core Rules 88 
+					</center>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 <!-- Modal -->
-<div class="modal fade" id="UnfamiliarWithFamiliar" role="dialog">
-	<div class="modal-dialog">
+	<div class="modal fade" id="UnfamiliarWithFamiliar" role="dialog">
+		<div class="modal-dialog">
 <!-- Modal content-->
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
-				<h4 class="modal-title">
-					Unfamiliar with familiar <i>(scimitar with shield instead of broadsword with shield))</i> 
-				</h4>
-			</div>
-			<div class="modal-body">
-				<p>
-					Combat Style – 1 Difficulty Grade 
-				</p>
-				<p>
-					Cannot go less than STR+DEX 
-				</p>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
-				<center>
-					Mythras Core Rules 88 
-				</center>
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">
+						Unfamiliar with familiar <i>(scimitar with shield instead of broadsword with shield))</i> 
+					</h4>
+				</div>
+				<div class="modal-body">
+					<p>
+						Combat Style – 1 Difficulty Grade 
+					</p>
+					<p>
+						Cannot go less than STR+DEX 
+					</p>
+				</div>
+				<div class="modal-footer">
+					<center>
+						Mythras Core Rules 88 
+					</center>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 <!-- Modal -->
-<div class="modal fade" id="Knockback" role="dialog">
-	<div class="modal-dialog">
+	<div class="modal fade" id="Knockback" role="dialog">
+		<div class="modal-dialog">
 <!-- Modal content-->
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
-				<h4 class="modal-title">
-					Knockback 
-				</h4>
-			</div>
-			<div class="modal-body">
-				<li>Knockback damage is counted before any reductions.</li>
-				<li> Easy Acrobatics or standard Athletics roll to avoid falling prone. </li>
-				<li> Thrust backwards one metre for each 5 points of damage (or fraction thereof) in excess of their SIZ. </li>
-				<li> <a href="#" data-toggle="modal" data-target="#Brace">Brace</a> Combat Action may affect knockback.</li>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
-				<center>
-					Mythras Core Rules 104 
-				</center>
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">
+						Knockback 
+					</h4>
+				</div>
+				<div class="modal-body">
+					<li>Knockback damage is counted before any reductions.</li>
+					<li> Easy Acrobatics or standard Athletics roll to avoid falling prone. </li>
+					<li> Thrust backwards one metre for each 5 points of damage (or fraction thereof) in excess of their SIZ. </li>
+					<li> <a href="#" data-toggle="modal" data-target="#Brace">Brace</a> Combat Action may affect knockback.</li>
+				</div>
+				<div class="modal-footer">
+					<center>
+						Mythras Core Rules 104 
+					</center>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 <!-- Modal -->
-<div class="modal fade" id="Brace" role="dialog">
-	<div class="modal-dialog">
+	<div class="modal fade" id="Brace" role="dialog">
+		<div class="modal-dialog">
 <!-- Modal content-->
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
-				<h4 class="modal-title">
-					Brace 
-				</h4>
-			</div>
-			<div class="modal-body">
-				<li>Take a firm chance and lean into the attack</li>
-				<li>Against Knockback or Leaping Attacks SIZ = 1.5x</li>
-				<li>Against Bash Special Effect SIZ = 2x</li>
-				<li>When character moves - brace is lost </li>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
-				<center>
-					Mythras Core Rules 91 
-				</center>
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">
+						Brace 
+					</h4>
+				</div>
+				<div class="modal-body">
+					<li>Take a firm chance and lean into the attack</li>
+					<li>Against Knockback or Leaping Attacks SIZ = 1.5x</li>
+					<li>Against Bash Special Effect SIZ = 2x</li>
+					<li>When character moves - brace is lost </li>
+				</div>
+				<div class="modal-footer">
+					<center>
+						Mythras Core Rules 91 
+					</center>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 <!-- Modal -->
-<div class="modal fade" id="Withdraw" role="dialog">
-	<div class="modal-dialog">
+	<div class="modal fade" id="Withdraw" role="dialog">
+		<div class="modal-dialog">
 <!-- Modal content-->
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
-				<h4 class="modal-title">
-					Withdraw from Combat 
-				</h4>
-			</div>
-			<div class="modal-body">
-				<p>
-					In your turn use proactive action to: 
-				</p>
-				<li>Use <a href="#" data-toggle="modal" data-target="#ChangeRange">Change Range</a> to open range to beyond range</li>
-				<li>Win and use Withdraw Special Effect</li>
-				<li>Win all opponents in <a href="#" data-toggle="modal" data-target="#Outmaneuvre">Outmaneuvre</a></li>
-				<li><a href="#" data-toggle="modal" data-target="#MountedCombat">Mounted</a> withdraw freely from engagement on your turn provided your mount moves faster than the opponent, and the mount itself is not engaged in attacking. </li>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
-				<center>
-					Mythras Core Rules 92, 101,104, 106 
-				</center>
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">
+						Withdraw from Combat 
+					</h4>
+				</div>
+				<div class="modal-body">
+					<p>
+						In your turn use proactive action to: 
+					</p>
+					<li>Use <a href="#" data-toggle="modal" data-target="#ChangeRange">Change Range</a> to open range to beyond range</li>
+					<li>Win and use Withdraw Special Effect</li>
+					<li>Win all opponents in <a href="#" data-toggle="modal" data-target="#Outmaneuvre">Outmaneuvre</a></li>
+					<li><a href="#" data-toggle="modal" data-target="#MountedCombat">Mounted</a> withdraw freely from engagement on your turn provided your mount moves faster than the opponent, and the mount itself is not engaged in attacking. </li>
+				</div>
+				<div class="modal-footer">
+					<center>
+						Mythras Core Rules 92, 101,104, 106 
+					</center>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 <!-- Modal -->
-<div class="modal fade" id="RegainFooting" role="dialog">
-	<div class="modal-dialog">
+	<div class="modal fade" id="RegainFooting" role="dialog">
+		<div class="modal-dialog">
 <!-- Modal content-->
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
-				<h4 class="modal-title">
-					Regain Footing 
-				</h4>
-			</div>
-			<div class="modal-body">
-				<li> Unengaged can regain his footing from being tripped or knocked down. </li>
-				<li> Engaged, must win an opposed test of Brawn or Athletics with the opponent before standing. </li>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
-				<center>
-					Mythras Core Rules 92 
-				</center>
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">
+						Regain Footing 
+					</h4>
+				</div>
+				<div class="modal-body">
+					<li> Unengaged can regain his footing from being tripped or knocked down. </li>
+					<li> Engaged, must win an opposed test of Brawn or Athletics with the opponent before standing. </li>
+				</div>
+				<div class="modal-footer">
+					<center>
+						Mythras Core Rules 92 
+					</center>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
-<div class="modal fade" id="Falling" role="dialog">
-	<div class="modal-dialog">
+	<div class="modal fade" id="Falling" role="dialog">
+		<div class="modal-dialog">
 <!-- Modal content-->
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
-				<h4 class="modal-title">
-					Falling 
-				</h4>
-			</div>
-			<div class="modal-body">
-				<li>Prone fights at Formidable</li>
-				<li>Prone unable to gain footing can be compelled to surrender</li>
-				<li> If unengaged with an opponent, the character can regain his footing from being tripped or knocked down. </li>
-				<li> If engaged, the character must win an Opposed test of Brawn or Athletics with the opponent before standing.</li>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
-				<center>
-					Mythras Core Rules 92, 97, 101 
-				</center>
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">
+						Falling 
+					</h4>
+				</div>
+				<div class="modal-body">
+					<li>Prone fights at Formidable</li>
+					<li>Prone unable to gain footing can be compelled to surrender</li>
+					<li> If unengaged with an opponent, the character can regain his footing from being tripped or knocked down. </li>
+					<li> If engaged, the character must win an Opposed test of Brawn or Athletics with the opponent before standing.</li>
+				</div>
+				<div class="modal-footer">
+					<center>
+						Mythras Core Rules 92, 97, 101 
+					</center>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
-</div>
-<div class="modal fade" id="Unarmed" role="dialog">
-	<div class="modal-dialog">
+	<div class="modal fade" id="Unarmed" role="dialog">
+		<div class="modal-dialog">
 <!-- Modal content-->
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
-				<h4 class="modal-title">
-					Unarmed 
-				</h4>
-			</div>
-			<div class="modal-body">
-				<li>Target needs to be within reach of the attacker’s natural weapons</li>
-				<li>Human attacks are size Small, Reach Touch and 1d3 damage</li>
-				<li>Unarmed Prowess Trait raises blocks and parries to Medium</li>
-				<li>Strike or Grapple - must be announced beforehand</li>
-				<li>Unarmed combat can parry a weapon attack </li>
-				<li><a href="#" data-toggle="modal" data-target="#ShorterReach">Step inside the reach of opponent for <a href="#" data-toggle="modal" data-target="#ShorterReach">Shorter Reach </a></li>
-				<li>Natural Weapons of creatures / monsters are considered to reach from Touch to their current Reach without suffering from opponents entering within their reach (Shorter Reach rule </li>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
-				<center>
-					Mythras Core Rules 105,222 
-				</center>
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">
+						Unarmed 
+					</h4>
+				</div>
+				<div class="modal-body">
+					<li>Target needs to be within reach of the attacker’s natural weapons</li>
+					<li>Human attacks are size Small, Reach Touch and 1d3 damage</li>
+					<li>Unarmed Prowess Trait raises blocks and parries to Medium</li>
+					<li>Strike or Grapple - must be announced beforehand</li>
+					<li>Unarmed combat can parry a weapon attack </li>
+					<li><a href="#" data-toggle="modal" data-target="#ShorterReach">Step inside the reach of opponent for <a href="#" data-toggle="modal" data-target="#ShorterReach">Shorter Reach </a></li>
+					<li>Natural Weapons of creatures / monsters are considered to reach from Touch to their current Reach without suffering from opponents entering within their reach (Shorter Reach rule </li>
+				</div>
+				<div class="modal-footer">
+					<center>
+						Mythras Core Rules 105,222 
+					</center>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
-<div class="modal fade" id="Evade" role="dialog">
-	<div class="modal-dialog">
+	<div class="modal fade" id="Evade" role="dialog">
+		<div class="modal-dialog">
 <!-- Modal content-->
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
-				<h4 class="modal-title">
-					Evade 
-				</h4>
-			</div>
-			<div class="modal-body">
-				<ul>
-					<li> Avoid missiles - vs Combat style of attacker</li>
-					<li> Thwarting a trap - vs either POT pr skill rating of maker</li>
-					<li> Evading a spell - vs spell caster's score in the casting skill</li>
-					<li> Manoeuvering in combat - vs attacker's evade skill </li>
-					<li> Whatever the result - evader is prone (and suffers Formidable on evade and fighting until up) and needs to <a href="#" data-toggle="modal" data-target="#RegainFooting">Regain Footing 92 </a> next Turn</li>
-					<li> Mounted character can only evade by flinging themselves from the saddle </li>
-				</ul>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
-				<center>
-					Mythras Core Rules 41,103 
-				</center>
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">
+						Evade 
+					</h4>
+				</div>
+				<div class="modal-body">
+					<ul>
+						<li> Avoid missiles - vs Combat style of attacker</li>
+						<li> Thwarting a trap - vs either POT pr skill rating of maker</li>
+						<li> Evading a spell - vs spell caster's score in the casting skill</li>
+						<li> Manoeuvering in combat - vs attacker's evade skill </li>
+						<li> Whatever the result - evader is prone (and suffers Formidable on evade and fighting until up) and needs to <a href="#" data-toggle="modal" data-target="#RegainFooting">Regain Footing 92 </a> next Turn</li>
+						<li> Mounted character can only evade by flinging themselves from the saddle </li>
+					</ul>
+				</div>
+				<div class="modal-footer">
+					<center>
+						Mythras Core Rules 41,103 
+					</center>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
-<div class="modal fade" id="MountedCombat" role="dialog">
-	<div class="modal-dialog">
+	<div class="modal fade" id="MountedCombat" role="dialog">
+		<div class="modal-dialog">
 <!-- Modal content-->
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button> 
-				<h4 class="modal-title">
-					Mounted Combat 
-				</h4>
-			</div>
-			<div class="modal-body">
-				<li>A mounted character may only Evade by flinging themselves clear of the saddle</li>
-				<li>Combat Skills of a rider may not exceed their Ride skill</li>
-				<li>1D10+10 for the Hit Location of bipedal creatures, provided the target is lower than the rider.</li>
-				<li>Withdraw freely from engagement on his turn provided his mount moves faster than the opponent, and the mount itself is not engaged in attacking.</li>
-				<li>Use Action Point to substitute either his own Combat Style or Ride skill instead of his mount’s, to defend it against Attacks.</li>
-				<li>Combine his SIZ with his mount’s for the purposes of avoiding Knockback, provided he passes an unOpposed Ride roll.</li>
-				<li>When Charging with a braced weapon, substitute his own Damage Bonus for that of his mount. A weapon braced for a Charging Attack cannot be used to Parry. If the weapon impales it must be left in the body of the target, or else break or dismount the rider as the mount continues past.</li>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
-				<center>
-					Mythras Core Rules 104 
-				</center>
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">
+						Mounted Combat 
+					</h4>
+				</div>
+				<div class="modal-body">
+					<li>A mounted character may only Evade by flinging themselves clear of the saddle</li>
+					<li>Combat Skills of a rider may not exceed their Ride skill</li>
+					<li>1D10+10 for the Hit Location of bipedal creatures, provided the target is lower than the rider.</li>
+					<li>Withdraw freely from engagement on his turn provided his mount moves faster than the opponent, and the mount itself is not engaged in attacking.</li>
+					<li>Use Action Point to substitute either his own Combat Style or Ride skill instead of his mount’s, to defend it against Attacks.</li>
+					<li>Combine his SIZ with his mount’s for the purposes of avoiding Knockback, provided he passes an unOpposed Ride roll.</li>
+					<li>When Charging with a braced weapon, substitute his own Damage Bonus for that of his mount. A weapon braced for a Charging Attack cannot be used to Parry. If the weapon impales it must be left in the body of the target, or else break or dismount the rider as the mount continues past.</li>
+				</div>
+				<div class="modal-footer">
+					<center>
+						Mythras Core Rules 104 
+					</center>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+	</script>
 </body>
 </html>
