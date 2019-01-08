@@ -18,7 +18,7 @@ Created by hkokko https://notesfrompavis.blog
  -->
 <div class="container-fluid">
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="#">Mythras Logo</a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> 
+		<a class="navbar-brand"><img src="MythrasLogoTransparent.jpg" class="img-fluid" alt="Mythras Logo"> </a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> 
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item active"> <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> </li>
@@ -84,7 +84,7 @@ Created by hkokko https://notesfrompavis.blog
 								<strong><a href="https://notesfrompavis.files.wordpress.com/2018/03/2018-03-07_07-18-42.png">Fatigue </a> Check: Endurance roll or lose Fatigue level </strong> 
 							</h5>
 							<div class="card-text">
-								<table class="table table-striped">
+								<table class="table table-striped table-sm table-responsive">
 									<td> CON </td>
 									<td> 1-5 </td>
 									<td> 6-10 </td>
@@ -116,268 +116,274 @@ Created by hkokko https://notesfrompavis.blog
 								<strong>Start of a Cycle in Combat Round </strong> 
 							</h5>
 							<div class="card-text">
-								<div class="card border-primary mb-3">
-									<div class="card-body">
-										<h5 class="card-header">
-											<strong>Attacker spends an Action Point if it can.</strong> 
-										</h5>
-										<div class="card-text">
+								<div id="accordion">
+									<div class="card border-primary mb-3">
+										<div class="card-body">
+											<h5 class="card-header id=" headingone">
+												<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> <strong>Attacker spends an Action Point if it can.</strong> </button> 
+											</h5>
+											<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+												<div class="card-body">
+													<div class="card-text">
+														<table class="table table-striped">
+															<tbody>
+																<tr>
+																	<td> Use Action Point for Proactive Action 
+																	<td> 
+																	<p>
+																		Select Combat Action to make an Attack 
+																	</p>
+																	<p>
+																		Apply the <a href="#" data-toggle="modal" data-target="#SituationalModifiers">situational modifiers</a> 
+																	</p>
+																	<p>
+																		Note the Attack die roll and result. 
+																	</p>
+																	<p>
+																		Attacker <i>loses Passive Block for the attacking weapon</i> 
+																	</p>
+																	<p>
+																		Can do Free Action 
+																	</p>
+																	</td>
+																</tr>
+																<tr>
+																	<td>Combat Actions - Proactive</td>
+																	<td> 
+																	<ul class="list-inline">
+																		<li class="list-inline-item">Attack</li>
+																		<li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#Brace">Brace 91 </a></li>
+																		<li class="list-inline-item">Cast Magic 91</li>
+																		<li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#ChangeRange">Change Range 106</a></li>
+																		<li class="list-inline-item">Delay 91</li>
+																		<li class="list-inline-item">Dither 91</li>
+																		<li class="list-inline-item">Hold Magic 91</li>
+																		<li class="list-inline-item">Mount 91</li>
+																		<li class="list-inline-item"><a href="https://drive.google.com/open?id=11r3hSNeN2SAeoxgr51aPb_kaoT5b3pYK">Move 91</a></li>
+																		<li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#Outmaneuvre">Outmaneuvre</a> 104</li>
+																		<li class="list-inline-item">Ready Weapon 92</li>
+																		<li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#RegainFooting">Regain Footing 92 </a></li>
+																		<li class="list-inline-item">Struggle 92</li>
+																		<li class="list-inline-item">Take Cover 91-92 </li>
+																	</ul>
+																	</td>
+																</tr>
+																<tr>
+																	<td>Combat</td>
+																	<td> 
+																	<ul class="list-inline">
+																		<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#Charging">Charging</a> </li>
+																		<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#ChargingIntoContact">into contact</a></li>
+																		<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#ChargingThroughContact">through Contact</a> 102</li>
+																		<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#Falling">Falling and combat (Prone fights at Formidable)</a></li>
+																		<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#LeapingAttacks">Leaping Attacks</a> 104</li>
+																		<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#MountedCombat">Mounted Combat</a> 104</li>
+																		<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#Outmaneuvre">Outmaneuvre</a> 104</li>
+																		<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#Surprise">Surprise</a> 105</li>
+																		<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#Unarmed">Unarmed Combat</a> 105,222</li>
+																		<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#Withdraw">Withdraw from combat</a> 105</li>
+																	</ul>
+																	</td>
+																</tr>
+																<tr>
+																	<td>Ranged Combat</td>
+																	<td> 
+																	<ul class="list-inline">
+																		<li class="list-inline-item">Aiming 108</li>
+																		<li class="list-inline-item">Firing into a crowd 108</li>
+																		<li class="list-inline-item">Firing on the move 108</li>
+																		<li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#Reload">Ranged weapons reload</a> 109 </li>
+																		<li class="list-inline-item"><a href="https://drive.google.com/open?id=1nSdoLdkGnCXzeBbHd8TOyCyvH6QsqcwO">Ranged combat situational modifiers</a> </li>
+																	</ul>
+																	</td>
+																</tr>
+																<tr>
+																	<td>Magic</td>
+																	<td> 
+																	<ul class="list-inline">
+																		<li class="list-inline-item"> Magic in Combat </li>
+																		<li class="list-inline-item"> <a href="https://drive.google.com/open?id=1u5xZlxve0snFnxB4m-GR2LXCad9xkcL2">Magic situational effects</a></li>
+																		<li class="list-inline-item"> Running out of Magic Points 117</li>
+																		<li class="list-inline-item"> Shaman fights</li>
+																		<li class="list-inline-item"> <a href="https://drive.google.com/open?id=0B0J20AZXw-hDOC13RjlBRHQxZXM">Sorcery in Combat</a></li>
+																		<li class="list-inline-item"> Spirit Combat 137 </li>
+																		<li class="list-inline-item"> <a href="https://drive.google.com/open?id=12-3T8W4E2TT_nSavY0QtBdZu1qFxf4UH">Spirit Combat Special Effects</a> </li>
+																	</ul>
+																	</td>
+																</tr>
+																<tr>
+																	<td> If cannot use Action Point 
+																	<td> 
+																	<p>
+																		Can do Free Action 
+																	</p>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="card border-primary mb-3">
+										<div class="card-body">
+											<h5 class="card-header">
+												<span class="label label-primary"> <strong>Free Actions (Attacker and Defender) </strong> </span> 
+											</h5>
+											<div class="card-text">
+												<table class="table table-striped">
+													<tbody>
+														<tr>
+															<td>Free Actions</td>
+															<td> 
+															<ul class="list-inline">
+																<li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#PassiveBlocking">Passive Blocking</a> 93, 105</li>
+																<li class="list-inline-item">Assess Situation 93</li>
+																<li class="list-inline-item">Drop Weapon 93</li>
+																<li class="list-inline-item">Signal 93</li>
+																<li class="list-inline-item">Speak 93</li>
+															</ul>
+															<ul class="list-inline">
+																<li class="list-inline-item">Use Group Luck Point 81, 93</li>
+																<li class="list-inline-item">Use Luck Point 81, 93</li>
+															</ul>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+									<div class="card border-primary mb-3">
+										<div class="card-body">
+											<h5 class="card-header">
+												<strong>Defender chooses whether to spend Action Point for Defense</strong> 
+											</h5>
 											<table class="table table-striped">
 												<tbody>
 													<tr>
-														<td> Use Action Point for Proactive Action 
+														<td>Use Action Point for Reactive Action</td>
+														<td> 
+														<ul class="list-inline">
+															<li class="list-inline-item">Defender spends an Action Point to make a reactive action per threat, applies the <a href="#" data-toggle="modal" data-target="#SituationalModifiers">situational modifiers</a> and notes the Parry die roll and result. Any # of reactions can be made - once per threat</li>
+															<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#Counterspell">Counterspell</a> 92 </li>
+															<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#Evade">Evade</a> 41, 103</li>
+															<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#Interrupt">Interrupt</a> 92</li>
+															<li class="list-inline-item"> Parry 93</li>
+														</ul>
+														</td>
+													</tr>
+													<tr>
+														<td> No Action Point used for Defense </td>
 														<td> 
 														<p>
-															Select Combat Action to make an Attack 
+															Treat as failed Parry 
 														</p>
 														<p>
-															Apply the <a href="#" data-toggle="modal" data-target="#SituationalModifiers">situational modifiers</a> 
-														</p>
-														<p>
-															Note the Attack die roll and result. 
-														</p>
-														<p>
-															Attacker <i>loses Passive Block for the attacking weapon</i> 
+															<a href="#" data-toggle="modal" data-target="#PassiveBlocking">Passive Blocking (Ward Location)</a> 93, 105 
 														</p>
 														<p>
 															Can do Free Action 
 														</p>
 														</td>
 													</tr>
-													<tr>
-														<td>Combat Actions - Proactive</td>
-														<td> 
-														<ul class="list-inline">
-															<li class="list-inline-item">Attack</li>
-															<li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#Brace">Brace 91 </a></li>
-															<li class="list-inline-item">Cast Magic 91</li>
-															<li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#ChangeRange">Change Range 106</a></li>
-															<li class="list-inline-item">Delay 91</li>
-															<li class="list-inline-item">Dither 91</li>
-															<li class="list-inline-item">Hold Magic 91</li>
-															<li class="list-inline-item">Mount 91</li>
-															<li class="list-inline-item"><a href="https://drive.google.com/open?id=11r3hSNeN2SAeoxgr51aPb_kaoT5b3pYK">Move 91</a></li>
-															<li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#Outmaneuvre">Outmaneuvre</a> 104</li>
-															<li class="list-inline-item">Ready Weapon 92</li>
-															<li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#RegainFooting">Regain Footing 92 </a></li>
-															<li class="list-inline-item">Struggle 92</li>
-															<li class="list-inline-item">Take Cover 91-92 </li>
-														</ul>
-														</td>
-													</tr>
-													<tr>
-														<td>Combat</td>
-														<td> 
-														<ul class="list-inline">
-															<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#Charging">Charging</a> </li>
-															<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#ChargingIntoContact">into contact</a></li>
-															<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#ChargingThroughContact">through Contact</a> 102</li>
-															<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#Falling">Falling and combat (Prone fights at Formidable)</a></li>
-															<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#LeapingAttacks">Leaping Attacks</a> 104</li>
-															<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#MountedCombat">Mounted Combat</a> 104</li>
-															<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#Outmaneuvre">Outmaneuvre</a> 104</li>
-															<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#Surprise">Surprise</a> 105</li>
-															<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#Unarmed">Unarmed Combat</a> 105,222</li>
-															<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#Withdraw">Withdraw from combat</a> 105</li>
-														</ul>
-														</td>
-													</tr>
-													<tr>
-														<td>Ranged Combat</td>
-														<td> 
-														<ul class="list-inline">
-															<li class="list-inline-item">Aiming 108</li>
-															<li class="list-inline-item">Firing into a crowd 108</li>
-															<li class="list-inline-item">Firing on the move 108</li>
-															<li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#Reload">Ranged weapons reload</a> 109 </li>
-															<li class="list-inline-item"><a href="https://drive.google.com/open?id=1nSdoLdkGnCXzeBbHd8TOyCyvH6QsqcwO">Ranged combat situational modifiers</a> </li>
-														</ul>
-														</td>
-													</tr>
-													<tr>
-														<td>Magic</td>
-														<td> 
-														<ul class="list-inline">
-															<li class="list-inline-item"> Magic in Combat </li>
-															<li class="list-inline-item"> <a href="https://drive.google.com/open?id=1u5xZlxve0snFnxB4m-GR2LXCad9xkcL2">Magic situational effects</a></li>
-															<li class="list-inline-item"> Running out of Magic Points 117</li>
-															<li class="list-inline-item"> Shaman fights</li>
-															<li class="list-inline-item"> <a href="https://drive.google.com/open?id=0B0J20AZXw-hDOC13RjlBRHQxZXM">Sorcery in Combat</a></li>
-															<li class="list-inline-item"> Spirit Combat 137 </li>
-															<li class="list-inline-item"> <a href="https://drive.google.com/open?id=12-3T8W4E2TT_nSavY0QtBdZu1qFxf4UH">Spirit Combat Special Effects</a> </li>
-														</ul>
-														</td>
-													</tr>
-													<tr>
-														<td> If cannot use Action Point 
-														<td> 
-														<p>
-															Can do Free Action 
-														</p>
-														</td>
-													</tr>
 												</tbody>
 											</table>
+										</div>
+									</div>
+									<div class="card border-primary mb-3">
+										<div class="card-body">
+											<h5 class="card-header">
+												<strong>Compare Results</strong> 
+											</h5>
+											<div class="card-text">
+												<table class="table table-striped">
+													<thead>
+														<tr>
+															<th colcpan="2"><span class="label label-primary"></span></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>Compare <a href="#" data-toggle="modal" data-target="#DegreeOfSuccess">Level of Success</a></td>
+															<td> 
+															<p>
+																Winner chooses Special Effect/s used 
+															</p>
+															<ul class="list-inline">
+																<li class="list-inline-item"> <a href="https://drive.google.com/open?id=10YOZE9eNg3mX_F01i1W3PubREESAlqrZ">Offensive</a>,</li>
+																<li class="list-inline-item"> <a href="https://drive.google.com/open?id=1i9zYMq1LBcsnc3t7vbZlIKH-FN3v9xOb">Defensive</a></li>
+																<li class="list-inline-item"><a href="https://drive.google.com/open?id=12-3T8W4E2TT_nSavY0QtBdZu1qFxf4UH">Spirit Combat Special Effects</a></li>
+																<li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#NaturalWeaponSpecialEffects">Select Natural Weapons Special Effects</a> 222</li>
+																<li class="list-inline-item">If Special Effect require Opposed Test from the opponent make one now and compare it to the original Attack or Parry value</li>
+															</ul>
+															</td>
+														</tr>
+														<tr>
+															<td> Compare damage </td>
+															<td> 
+															<p>
+																If the chosen Special Effect is not Choose Location, roll to determine what Hit Location has been hit 
+															</p>
+															<p>
+																If the Attacker succeeded roll damage and apply Damage Bonus if any 
+															</p>
+															<p>
+																If the Defender did <a href="#" data-toggle="modal" data-target="#PassiveBlocking">Passive Blocking</a> 93, 105 on the Hit Location that Attacker hit <a href="#" data-toggle="modal" data-target="#DamageReduction">reduce damage</a> 
+															</p>
+															<p>
+																If the Defender succeeded <a href="#" data-toggle="modal" data-target="#DamageReduction">reduce damage more</a> 
+															</p>
+															<p>
+																See how much of the <a href=" https://drive.google.com/open?id=1mX8eLOAbb35fBGR8rvwOk07jfHEAxzxH">(reduced)</a> damage penetrates any armor and protective magic worn 
+															</p>
+															<ul class="list-inline">
+																<li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#Knockback">Knockback</a> if unreduced damage > SIZ</li>
+																<li class="list-inline-item"><a href="https://drive.google.com/open?id=1BfW-gVsmmZhLBfk5uKB6-5LQ0CYd4g8h">Healing and wounds</a></li>
+																<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#HeroicLastAction">Heroic Last Action</a> 111</li>
+															</ul>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
 										</div>
 									</div>
 								</div>
 								<div class="card border-primary mb-3">
 									<div class="card-body">
 										<h5 class="card-header">
-											<span class="label label-primary"> <strong>Free Actions (Attacker and Defender) </strong> </span> 
+											<strong>End of Cycle in Combat Round</strong> 
 										</h5>
 										<div class="card-text">
-											<table class="table table-striped">
-												<tbody>
-													<tr>
-														<td>Free Actions</td>
-														<td> 
-														<ul class="list-inline">
-															<li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#PassiveBlocking">Passive Blocking</a> 93, 105</li>
-															<li class="list-inline-item">Assess Situation 93</li>
-															<li class="list-inline-item">Drop Weapon 93</li>
-															<li class="list-inline-item">Signal 93</li>
-															<li class="list-inline-item">Speak 93</li>
-														</ul>
-														<ul class="list-inline">
-															<li class="list-inline-item">Use Group Luck Point 81, 93</li>
-															<li class="list-inline-item">Use Luck Point 81, 93</li>
-														</ul>
-														</td>
-													</tr>
-												</tbody>
-											</table>
+											<li class="list-inline-item">If the opponent is still there and willing to fight repeat with another Cycle in the Combat Round until both sides run out of Action Points</li>
+											<li class="list-inline-item">When everybody is out of Action Points - start another Combat Round</li>
 										</div>
-									</div>
-								</div>
-								<div class="card border-primary mb-3">
-									<div class="card-body">
-										<h5 class="card-header">
-											<strong>Defender chooses whether to spend Action Point for Defense</strong> 
-										</h5>
-										<table class="table table-striped">
-											<tbody>
-												<tr>
-													<td>Use Action Point for Reactive Action</td>
-													<td> 
-													<ul class="list-inline">
-														<li class="list-inline-item">Defender spends an Action Point to make a reactive action per threat, applies the <a href="#" data-toggle="modal" data-target="#SituationalModifiers">situational modifiers</a> and notes the Parry die roll and result. Any # of reactions can be made - once per threat</li>
-														<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#Counterspell">Counterspell</a> 92 </li>
-														<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#Evade">Evade</a> 41, 103</li>
-														<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#Interrupt">Interrupt</a> 92</li>
-														<li class="list-inline-item"> Parry 93</li>
-													</ul>
-													</td>
-												</tr>
-												<tr>
-													<td> No Action Point used for Defense </td>
-													<td> 
-													<p>
-														Treat as failed Parry 
-													</p>
-													<p>
-														<a href="#" data-toggle="modal" data-target="#PassiveBlocking">Passive Blocking (Ward Location)</a> 93, 105 
-													</p>
-													<p>
-														Can do Free Action 
-													</p>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-								<div class="card border-primary mb-3">
-									<div class="card-body">
-										<h5 class="card-header">
-											<strong>Compare Results</strong> 
-										</h5>
-										<div class="card-text">
-											<table class="table table-striped">
-												<thead>
-													<tr>
-														<th colcpan="2"><span class="label label-primary"></span></th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Compare <a href="#" data-toggle="modal" data-target="#DegreeOfSuccess">Level of Success</a></td>
-														<td> 
-														<p>
-															Winner chooses Special Effect/s used 
-														</p>
-														<ul class="list-inline">
-															<li class="list-inline-item"> <a href="https://drive.google.com/open?id=10YOZE9eNg3mX_F01i1W3PubREESAlqrZ">Offensive</a>,</li>
-															<li class="list-inline-item"> <a href="https://drive.google.com/open?id=1i9zYMq1LBcsnc3t7vbZlIKH-FN3v9xOb">Defensive</a></li>
-															<li class="list-inline-item"><a href="https://drive.google.com/open?id=12-3T8W4E2TT_nSavY0QtBdZu1qFxf4UH">Spirit Combat Special Effects</a></li>
-															<li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#NaturalWeaponSpecialEffects">Select Natural Weapons Special Effects</a> 222</li>
-															<li class="list-inline-item">If Special Effect require Opposed Test from the opponent make one now and compare it to the original Attack or Parry value</li>
-														</ul>
-														</td>
-													</tr>
-													<tr>
-														<td> Compare damage </td>
-														<td> 
-														<p>
-															If the chosen Special Effect is not Choose Location, roll to determine what Hit Location has been hit 
-														</p>
-														<p>
-															If the Attacker succeeded roll damage and apply Damage Bonus if any 
-														</p>
-														<p>
-															If the Defender did <a href="#" data-toggle="modal" data-target="#PassiveBlocking">Passive Blocking</a> 93, 105 on the Hit Location that Attacker hit <a href="#" data-toggle="modal" data-target="#DamageReduction">reduce damage</a> 
-														</p>
-														<p>
-															If the Defender succeeded <a href="#" data-toggle="modal" data-target="#DamageReduction">reduce damage more</a> 
-														</p>
-														<p>
-															See how much of the <a href=" https://drive.google.com/open?id=1mX8eLOAbb35fBGR8rvwOk07jfHEAxzxH">(reduced)</a> damage penetrates any armor and protective magic worn 
-														</p>
-														<ul class="list-inline">
-															<li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#Knockback">Knockback</a> if unreduced damage > SIZ</li>
-															<li class="list-inline-item"><a href="https://drive.google.com/open?id=1BfW-gVsmmZhLBfk5uKB6-5LQ0CYd4g8h">Healing and wounds</a></li>
-															<li class="list-inline-item"> <a href="#" data-toggle="modal" data-target="#HeroicLastAction">Heroic Last Action</a> 111</li>
-														</ul>
-														</td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="card border-primary mb-3">
-								<div class="card-body">
-									<h5 class="card-header">
-										<strong>End of Cycle in Combat Round</strong> 
-									</h5>
-									<div class="card-text">
-										<li class="list-inline-item">If the opponent is still there and willing to fight repeat with another Cycle in the Combat Round until both sides run out of Action Points</li>
-										<li class="list-inline-item">When everybody is out of Action Points - start another Combat Round</li>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				<footer>
+					<center>
+						“Mythras” is a Registered Trademark of The Design Mechanism Inc, and is used with permission. 
+					</center>
+					<center>
+						<a href="https://notesfrompavis.blog">NotesFromPavis Blog - other useful Mythras material</a> 
+					</center>
+					<center>
+						Creating enemies (monsters, NPCs) in Mythras <a href="https://notesfrompavis.blog/2014/05/13/rq6-encounter-tool-feature-recap-for-busy-gms/">with couple of clicks</a> 
+					</center>
+					<center>
+						<i>Some campaigns make Fatigue, Encumbrance, Effect of Reach (Shorter/Longer) and Group Luck Points optional rules</i> 
+					</center>
+					<center>
+						<i>Narrow corridors and Choose Location as critical only are house rules. </i> 
+					</center>
+				</footer>
 			</div>
-			<footer>
-				<center>
-					“Mythras” is a Registered Trademark of The Design Mechanism Inc, and is used with permission. 
-				</center>
-				<center>
-					<a href="https://notesfrompavis.blog">NotesFromPavis Blog - other useful Mythras material</a> 
-				</center>
-				<center>
-					Creating enemies (monsters, NPCs) in Mythras <a href="https://notesfrompavis.blog/2014/05/13/rq6-encounter-tool-feature-recap-for-busy-gms/">with couple of clicks</a> 
-				</center>
-				<center>
-					<i>Some campaigns make Fatigue, Encumbrance, Effect of Reach (Shorter/Longer) and Group Luck Points optional rules</i> 
-				</center>
-				<center>
-					<i>Narrow corridors and Choose Location as critical only are house rules. </i> 
-				</center>
-			</footer>
 		</div>
 	</div>
 </div>
@@ -1140,8 +1146,8 @@ Created by hkokko https://notesfrompavis.blog
 										<a href=" https://drive.google.com/open?id=1eop-r3AtlgNWn1sjNc-PU0rBRm3Vlc_L">Longer Reach </a> 
 									</h5>
 									<div class="card-text">
-										<li> If fighting at the Reach of the longer weapon, then the user of the shorter weapon cannot directly Attack the wielder of the longer. They are still considered to be engaged. </li>
-										<li>User of the shorter weapon can Attack the longer weapon, try to close the range between them, or hope to win an applicable Special Effect. </li>
+										<li> If fighting at the Reach of the longer weapon, then the user of the <b>shorter weapon cannot directly Attack the wielder of the longer</b>. They are still considered to be engaged. </li>
+										<li>User of the shorter weapon can <b>Attack the longer weapon</b>, try to <b>close the range</b> between them, or hope to win an applicable <b>Special Effect</b>. </li>
 									</div>
 								</div>
 							</div>
@@ -1151,9 +1157,9 @@ Created by hkokko https://notesfrompavis.blog
 										<a href="https://drive.google.com/open?id=1T3jok-ejxlvKMaT46OjlP-lctHz5JQyK">Shorter Reach</a> 
 									</h5>
 									<div class="card-text">
-										<li> Longer weapon cannot Parry.</li>
-										<li> The longer weapon’s Size is reduced as many steps as the difference between the two weapons’ Reach</li>
-										<li>Longer weapon only inflicts 1d3+1 damage </li>
+										<li> Longer weapon <b>cannot Parry</b>.</li>
+										<li> The longer weapon’s <b>Size is reduced</b> as many steps as the difference between the two weapons’ Reach</li>
+										<li>Longer weapon can only do<b>1d3+1 damage</b> </li>
 										<li><strong>Getting within Shorter Reach of Natural Weapons does not have the above limitations (Damage is normal, Can Parry, No reduction of Size)</strong></li>
 									</div>
 								</div>
@@ -1766,13 +1772,13 @@ Created by hkokko https://notesfrompavis.blog
 				</h4>
 			</div>
 			<div class="modal-body">
-				<li>Target needs to be within reach of the attacker’s natural weapons</li>
+				<li>Target needs to be <b>within reach</b> of the attacker’s natural weapons</li>
 				<li>Human attacks are size Small, Reach Touch and 1d3 damage</li>
 				<li>Unarmed Prowess Trait raises blocks and parries to Medium</li>
-				<li>Strike or Grapple - must be announced beforehand</li>
+				<li>Strike or <a href="#" data-toggle="modal" data-target="#Grapple" data-dismiss="modal"> Grapple</a> 106 - must be announced beforehand</li>
 				<li>Unarmed combat can parry a weapon attack </li>
 				<li><a href="#" data-toggle="modal" data-target="#ShorterReach" data-dismiss="modal">Step inside the reach of opponent for <a href="#" data-toggle="modal" data-target="#ShorterReach" data-dismiss="modal">Shorter Reach </a></li>
-				<li>Natural Weapons of creatures / monsters are considered to reach from Touch to their current Reach without suffering from opponents entering within their reach (Shorter Reach rule </li>
+				<li>Natural Weapons of creatures / monsters are considered to reach from <b>Touch to their current Reach</b> without suffering from opponents entering within their reach (Shorter Reach rule) </li>
 			</div>
 			<div class="modal-footer">
 				<center>
@@ -1783,6 +1789,36 @@ Created by hkokko https://notesfrompavis.blog
 		</div>
 	</div>
 </div>
+
+<div class="modal fade" id="Grapple" role="dialog">
+	<div class="modal-dialog">
+<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">
+					Grapple
+				</h4>
+			</div>
+			<div class="modal-body">
+				<ul>
+					<li> Must be within reach</li>
+					<li> Unarmed vs defender's combat skill. Success = Grapple</li>
+					<li> <i>Limb</i> - <b>inoperable</b>. <i>Head or Torso</i> - <b>Hard</b> on any skill</li>
+					<li> Following turn grappler can make <strong>unarmed attacks vs Brawn or Unarmed</strong> inflicting her <strong>Damage Modifier</strong> </li>
+					<li> Can break free with <strong>Struggle - Brawn or Unarmed vs Brawn or Unarmed</strong> whatever the grappler prefers </li>
+					<li> Grappling limb <strong>must be empty</strong> and capable of hooking, sticking or gripping</li>
+				</ul>
+			</div>
+			<div class="modal-footer">
+				<center>
+					Mythras Core Rules 106
+				</center>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+			</div>
+		</div>
+	</div>
+</div>
+
 <div class="modal fade" id="Evade" role="dialog">
 	<div class="modal-dialog">
 <!-- Modal content-->
